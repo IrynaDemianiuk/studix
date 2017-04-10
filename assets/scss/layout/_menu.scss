@@ -13,6 +13,7 @@
       left: 0;
       right: 0;
       bottom: 0;
+      z-index: 100;
     }
   }
 
@@ -43,7 +44,6 @@
     text-align: left;
     text-transform: uppercase;
     padding: 26px 18px 27px;
-    border: 0.5px solid transparent;
     @include respond-to(md) {
       font-size: 14px;
       padding: 26px 13px 27px;
@@ -55,7 +55,6 @@
     }
 
     &:hover {
-      border: 0.5px solid #fff;
       background-color: #f7941d;
       color: #fff;
     }
