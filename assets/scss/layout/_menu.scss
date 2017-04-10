@@ -1,0 +1,97 @@
+.menu {
+  &__flex-inner--closed,
+  &__flex-inner--opened {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    @include respond-to(sm) {
+      flex-flow: column;
+      width: 100%;
+      position: absolute;
+      display: none;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+  }
+
+  &__flex-inner--opened {
+    @include respond-to(sm) {
+      display: block;
+    }
+  }
+
+  &__container {
+    position: relative;
+  }
+
+  &__list {
+    display: flex;
+    flex-flow: row wrap;
+    @include respond-to(sm) {
+      flex-flow: column;
+    }
+  }
+
+  &__link {
+    display: block;
+    @include roboto-700;
+    color: rgba(37, 37, 37, 0.76);
+    font-size: 16px;
+    line-height: 12px;
+    text-align: left;
+    text-transform: uppercase;
+    padding: 26px 18px 27px;
+    border: 0.5px solid transparent;
+    @include respond-to(md) {
+      font-size: 14px;
+      padding: 26px 13px 27px;
+    }
+    @include respond-to(sm) {
+      font-size: 24px;
+      padding: 26px 13px 27px;
+      text-align: center;
+    }
+
+    &:hover {
+      border: 0.5px solid #fff;
+      background-color: #f7941d;
+      color: #fff;
+    }
+  }
+}
+
+.search {
+  display: inline-block;
+  background-color: #ebebeb;
+  padding-left: 20px;
+  @include respond-to(sm) {
+    width: 100%;
+  }
+
+  input {
+    width: 310px;
+    height: 65px;
+    @include roboto-700;
+    color: #4e4c4c;
+    font-size: 16px;
+    line-height: 12px;
+    text-align: left;
+    text-transform: uppercase;
+    background-color: #ebebeb;
+    padding: 23px 18px;
+    @include respond-to(md) {
+      width: 195px;
+      font-size: 14px;
+      padding: 23px 13px;
+    }
+  }
+
+  &__icon {
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    background: url("../../img/search.png");
+  }
+}
