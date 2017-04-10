@@ -1,0 +1,75 @@
+@function rem($size, $line-height) {
+  $remSize: $size / 16px;
+  $remLh: $line-height / 16px;
+  @return #{$remSize}rem/#{$remLh}rem;
+}
+
+@mixin respond-to($media) {
+   @if $media == lg{
+    @media only screen and (min-width: 1400px) {
+       @content;
+    }
+  }
+  @if $media == md {
+     @media only screen and (max-width: 1400px){
+      @content;
+    }
+  }
+  @if $media == sm {
+     @media only screen and (max-width: 992px){
+      @content;
+    }
+  }
+  @if $media == xs {
+     @media only screen and (max-width: 768px){
+      @content;
+    }
+  }
+  // width < 479
+  @if $media == 479 {
+     @media only screen and (max-width: 479px){
+      @content;
+    }
+  }
+}
+
+@mixin clearfix() {
+  *zoom: 1;
+
+  &:after,
+  &:before {
+    content: "";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+@mixin bg {
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+@mixin OpenSans {
+  font-family: 'Open Sans', arial, sans-serif;
+}
+@mixin roboto-700 {
+  font-family: 'Roboto', arial, sans-serif;
+  font-weight: 700;
+}
+@mixin roboto-c-400 {
+  font-family: 'Roboto Condensed', arial, sans-serif;
+  font-weight: 400;
+}
+@mixin roboto-c-700 {
+  font-family: 'Roboto Condensed', arial, sans-serif;
+  font-weight: 700;
+}
+@mixin ptsans-400 {
+  font-family: 'PT Sans', arial, sans-serif;
+  font-weight: 400;
+}
+@mixin ptsans-700 {
+  font-family: 'PT Sans', arial, sans-serif;
+  font-weight: 700;
+}
