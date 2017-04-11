@@ -1,3 +1,5 @@
+$(document).ready(function() {
+
 var toggleBtn = document.querySelector(".toggle-btn");
 var menu = document.querySelector(".menu__flex-inner--closed");
 
@@ -17,4 +19,16 @@ window.addEventListener("keydown", function(event) {
         menu.classList.remove("menu__flex-inner--opened");
       }
   }
+});
+
+
+
+  $('.js-slider').slick({
+    fade:true,
+        infinite:true,
+        arrows:false,
+        autoplay: true,
+        autoplaySpeed: 3000,
+  });
+
 });
