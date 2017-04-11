@@ -13,13 +13,25 @@
   }
 }
 
-.logo__picture {
+.logo {
+  &__picture {
   width: 245px;
   height: 108px;
   @include respond-to(md) {
     width: 200px;
     height: auto;
   }
+}
+&__text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #f7941d;
+  text-transform: uppercase;
+  font-size: 18.5px;
+line-height: 12px;
+text-align: left;
+padding-top: 5px;
+}
 }
 
 .language {
