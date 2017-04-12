@@ -1,0 +1,40 @@
+.features {
+  &__flex-inner {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+
+    padding-bottom: 57px;
+    border-bottom: 1px solid #e1e1e1;
+  }
+
+  &__item {
+    width: 289px;
+  }
+
+  &__picture {
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 26px;
+  }
+
+  &__title {
+    @include roboto-c-700;
+    color: #1d1d1d;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    text-transform: uppercase;
+
+    margin-bottom: 22px;
+  }
+
+  &__text {
+    font-family: 'Roboto';
+    font-weight: 300;
+    color: #6b6a6a;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+  }
+}
