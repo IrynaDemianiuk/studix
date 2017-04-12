@@ -1,9 +1,11 @@
 //tools
 @import "tools/variables";
 @import "tools/mixins";
+@import "tools/animation";
 //base
 @import "base/base";
 
 //layout
 @import "layout/top-header";
 @import "layout/menu";
+@import "layout/progress-bar-under-slider";

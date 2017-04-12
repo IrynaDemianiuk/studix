@@ -29,16 +29,19 @@ const front = {
             arrows: false,
             autoplay: true,
             autoplaySpeed: 3000,
+            speed:300
         },
 
+
         //ініціалізація слайдера куда ми передаємо /params/ обєкт з параметрами
-        SLICK: function (params) {
-            $('.js-slider').slick(params);
+        SLICK: function (block,params) {
+            // initialize slider
+            block.slick(params);
         },
 
         // ініціалізація всіх слайдерів
         init: function () {
-            this.SLICK(this.mainSlider);
+            this.SLICK( $('.js-slider') , this.mainSlider);
         }
 
     },
@@ -109,7 +112,7 @@ const front = {
         this.Slider.init();
 
         // виклик
-        this.classicTabs( ".tab-li", ".tab-cont", 2);
+        // this.classicTabs( ".tab-li", ".tab-cont", 2);
     }
 };
 
