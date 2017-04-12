@@ -1,4 +1,4 @@
-var front = {
+const front = {
     MobileMenuOpenClose: function () {
         let toggleBtn = document.querySelector(".toggle-btn");
         let menu = document.querySelector(".menu__flex-inner--closed");
@@ -42,30 +42,66 @@ var front = {
         }
 
     },
+    fadeIn:function (el,display) {
+        el.style.opacity = 0;
+        el.style.display = display || "block";
+
+        (function fade() {
+            let val = parseFloat(el.style.opacity);
+            if (!((val += .1) > 1)) {
+                el.style.opacity = val;
+                requestAnimationFrame(fade);
+            }
+        })();
+    },
+    fadeOut:function (el) {
+        el.style.opacity = 1;
+
+        (function fade() {
+            if ((el.style.opacity -= .1) < 0) {
+                el.style.display = "none";
+            } else {
+                requestAnimationFrame(fade);
+            }
+        })();
+    },
     // classic Tabs
     // link - елемент яким переключатимеш таби !Важливо щоб були всі в одному блоці!
     // сontent - конент (блок) важливо щоб всі були в одному блоці)
     // active - номер таба який буде першим (від 0) по дефолту 0
     // scroll - truе/false при по дефолту фолс, при тру скролитиме до верху (початку) контенту
 
-    classicTabs: function (link, content, active, scroll) {
+    classicTabs: function (link, content, active) {
         active = typeof active !== 'undefined' ? active : 0;
-        scroll = typeof scroll !== 'undefined' ? scroll : false;
 
-        link.on('click', function (e) {
-            e.preventDefault();
-            link.removeClass("active").eq($(this).index()).addClass("active");
-            content.hide().eq($(this).index()).fadeIn(500);
-        }).eq(active).addClass("active");
+        const nodeListLink = document.querySelectorAll(link);
+        const nodeListCont = document.querySelectorAll(content);
 
-        content.hide().eq(active).show();
+        [].forEach.call(nodeListLink, function(el){
+           el.addEventListener('click',function (e) {
+               e.preventDefault();
+               //index of clicked element
+               let index = Array.prototype.indexOf.call(nodeListLink,el);
+               //remove active class from all
+               [].forEach.call(nodeListLink, function(el){ el.classList.remove('active'); });
+               //add class active to clicked element
+               this.classList.add('active');
+               // fadeOut active content
+               [].forEach.call(nodeListCont, function(el){
+                   front.fadeOut(el);
+               });
+               //faddeIn new content
+               front.fadeIn(nodeListCont[index]);
+           })
+        });
 
-        if (scroll) {
-            link.on('click', function () {
-                let top = content.parent().offset().top - 20;
-                $('body,html').animate({'scrollTop': top}, 500);
-            })
-        }
+        //hide all contents
+        [].forEach.call(nodeListCont, function(el){
+            el.style.display = 'none';
+        });
+        //fadeIn first element and add class active to link
+        nodeListLink[active].classList.add('active');
+        nodeListCont[active].style.display='block';
 
     },
     init: function () {
@@ -73,7 +109,7 @@ var front = {
         this.Slider.init();
 
         // виклик
-        // this.classicTabs( $('.link'), $('.content'), 0, false)
+        this.classicTabs( ".tab-li", ".tab-cont", 2);
     }
 };
 
