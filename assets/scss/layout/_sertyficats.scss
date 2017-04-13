@@ -1,3 +1,60 @@
 .sertyficats {
   width: 960px;
+  &-slider {
+    position: relative;
+  }
+}
+
+.slick-prev {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 15;
+
+  width: 39px;
+  height: 300px;
+  font-size: 0;
+  background-color:  rgba(0, 0, 0, 0.68);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 140px;
+    bottom: 0;
+    left: 15px;
+
+    background: url(../../img/arrows.png);
+    background-position: 0 0;
+    width: 11px;
+    height: 19px;
+    z-index: 20;
+  }
+}
+
+.slick-next {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 15;
+  font-size: 0;
+
+  width: 39px;
+  height: 300px;
+  font-size: 0;
+  background-color:  rgba(0, 0, 0, 0.68);
+  &::after {
+    content: "";
+    position: absolute;
+    top: 140px;
+    bottom: 0;
+    left: 15px;
+
+    background: url(../../img/arrows.png);
+    background-position: 14px 0;
+    width: 11px;
+    height: 19px;
+    z-index: 20;
+  }
 }
