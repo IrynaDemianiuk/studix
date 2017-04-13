@@ -1,7 +1,8 @@
 .page-footer {
-  width: 1920px;
-  height: 512px;
   background: url("../../img/footer.jpg");
+  padding-top: 35px;
+  padding-bottom: 35px;
+  max-height: 512px;
 }
 
 .coutries {
@@ -21,7 +22,7 @@
   line-height: 25px;
   text-align: left;
   text-transform: uppercase;
-  margin-bottom: 32px;
+  margin-bottom: 20px;
 }
 
 .footer {
@@ -39,7 +40,7 @@
 
     &__item {
       &-padding {
-        margin-bottom: 40px;
+        margin-bottom: 30px;
       }
     }
 
@@ -84,14 +85,14 @@
     .contacts {
       border-left: none;
       border-right: none;
-      margin-bottom: 32px;
+      margin-bottom: 20px;
       padding-left: 0;
       padding-right: 0;
 
       &__title {
         text-align: left;
         text-transform: uppercase;
-        margin-bottom: 32px;
+        margin-bottom: 25px;
       }
 
       &__left {
@@ -103,20 +104,20 @@
       }
 
       &__inf {
-        line-height: 2;
+        line-height: 1.8;
       }
     }
 
     .mode {
       border-right: none;
-      margin-bottom: 25px;
+      margin-bottom: 15px;
       padding-left: 0;
       padding-right: 0;
 
       &__title {
         text-align: left;
         text-transform: uppercase;
-        margin-bottom: 25px;
+
       }
 
       &__time {
@@ -125,7 +126,7 @@
     }
 
     .social {
-      margin-bottom: 25px;
+      margin-bottom: 20px;
     }
   }
 }
@@ -139,7 +140,7 @@
     line-height: 20px;
     text-align: left;
     text-transform: uppercase;
-    margin-bottom: 32px;
+    margin-bottom: 20px;
   }
 
   &__form {
