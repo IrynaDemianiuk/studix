@@ -1,7 +1,8 @@
 .slider{
   &__progress-bar{
 	display : block;
-	width : 100%;
+	max-width: 1920px;
+  margin: auto;
 	height : 5px;
 	background : #ccc;
 	position : relative;

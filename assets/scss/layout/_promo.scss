@@ -1,6 +1,11 @@
 .slider {
   position: relative;
 
+  &__picture {
+    margin: auto;
+    max-width: 1920px;
+  }
+
   .container {
     position: absolute;
     margin: auto;
