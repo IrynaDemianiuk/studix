@@ -32,6 +32,12 @@ const front = {
             speed:300
         },
 
+        secondSlider: {
+          infinite: true,
+          slidesToShow: 4,
+          slidesToScroll: 1
+       },
+
 
         //ініціалізація слайдера куда ми передаємо /params/ обєкт з параметрами
         SLICK: function (block,params) {
@@ -42,6 +48,7 @@ const front = {
         // ініціалізація всіх слайдерів
         init: function () {
             this.SLICK( $('.js-slider') , this.mainSlider);
+            this.SLICK( $('.sertyficats-slider') , this.secondSlider);
         }
 
     },
