@@ -1,7 +1,12 @@
 .sertyficats {
-  width: 960px;
+  padding-top: 45px;
   &-slider {
     position: relative;
+    margin-bottom: 20px;
+  }
+  &__title {
+    text-align: center;
+    margin-bottom: 39px;
   }
 }
 

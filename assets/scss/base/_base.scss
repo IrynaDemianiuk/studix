@@ -1,59 +1,94 @@
-body{
+body {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  *{
+
+  * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
 }
 
-*,h1,h2,h3,h4,h5,h6,p,ul,li{
+*,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+p,
+ul {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  outline:none;
+  outline: none;
 }
 
 html {
   height: 100%;
   min-height: 100%;
 }
-article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
   display: block;
 }
-ul,li{
+
+li,
+ul {
   list-style: none;
 }
-input,button{
-  border:none;
-  outline:0;
+
+button,
+input {
+  border: none;
+  outline: 0;
 }
+
 body {
   width: 100%;
   height: 100%;
   overflow-x: hidden;
 }
-img{
-  max-width:100%;
-  height:auto;
+
+img {
+  max-width: 100%;
+  height: auto;
   vertical-align: middle;
 }
-a,a:hover,a:active,a:focus,a:visited{
+
+a,
+a:active,
+a:focus,
+a:hover,
+a:visited {
   text-decoration: none;
-  outline:none;
-  cursor:pointer;
+  outline: none;
+  cursor: pointer;
 }
-.button{
+
+.button {
   padding: 8px 25px;
   color: #fff;
   font-size: 22px;
 }
-a.button{
-  display:inline-block;
+
+a.button {
+  display: inline-block;
 }
 
 .wrapper {
@@ -69,4 +104,28 @@ a.button{
   max-width: 1300px;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+.main-title {
+  font-family: 'Open Sans';
+  color: #000;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 25px;
+  text-transform: uppercase;
+}
+
+.main-btn {
+  display: block;
+  width: 100%;
+
+  @include roboto-c-700;
+  color: #474747;
+  font-size: 14px;
+  line-height: 25px;
+  text-align: center;
+  text-transform: uppercase;
+
+  padding-top: 25px;
+  padding-bottom: 24px;
 }

@@ -1,13 +1,7 @@
 .offers {
   margin-bottom: 45px;
   &__title {
-    font-family: 'Open Sans';
-    color: #000;
-    font-size: 24px;
-    font-weight: 300;
-    line-height: 25px;
     text-align: left;
-    text-transform: uppercase;
     margin-bottom: 26px;
   }
 
@@ -63,19 +57,4 @@
     width: 298px;
     height: 245px;
   }
-}
-
-.offers__btn {
-  display: block;
-  width: 100%;
-
-  @include roboto-c-700;
-  color: #474747;
-  font-size: 14px;
-  line-height: 25px;
-  text-align: center;
-  text-transform: uppercase;
-
-  padding-top: 25px;
-  padding-bottom: 24px;
 }
