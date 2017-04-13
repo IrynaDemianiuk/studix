@@ -38,6 +38,12 @@ const front = {
           slidesToScroll: 1
        },
 
+       thirdSlider: {
+         infinite: true,
+         slidesToShow: 4,
+         slidesToScroll: 1
+      },
+
 
         //ініціалізація слайдера куда ми передаємо /params/ обєкт з параметрами
         SLICK: function (block,params) {
@@ -49,6 +55,7 @@ const front = {
         init: function () {
             this.SLICK( $('.js-slider') , this.mainSlider);
             this.SLICK( $('.sertyficats-slider') , this.secondSlider);
+            this.SLICK( $('.gallery-slider') , this.thirdSlider);
         }
 
     },

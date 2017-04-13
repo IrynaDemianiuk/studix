@@ -1,0 +1,101 @@
+.gallery {
+  padding-top: 45px;
+  margin-bottom: 58px;
+
+  &-slider {
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: 39px;
+  }
+
+  &-item {
+    position: relative;
+
+    &__hrv {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    &:hover &__hrv {
+      display: block;
+    }
+
+    &__btn {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 106px;
+      height: 58px;
+
+      @include roboto-c-700;
+      color: #fff;
+      font-size: 14px;
+      line-height: 20px;
+      text-align: center;
+      background-color: #f58f00;
+      text-transform: uppercase;
+    }
+  }
+
+  .slick-prev {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 15;
+    width: 39px;
+    height: 151px;
+    font-size: 0;
+    background-color: rgba(0, 0, 0, 0.68);
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 70px;
+      bottom: 0;
+      left: 15px;
+      background: url(../../img/arrows.png);
+      background-position: 0 0;
+      width: 11px;
+      height: 19px;
+      z-index: 20;
+    }
+  }
+
+  .slick-next {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 15;
+    font-size: 0;
+    width: 39px;
+    height: 151px;
+    font-size: 0;
+    background-color: rgba(0, 0, 0, 0.68
+    );
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 70px;
+      bottom: 0;
+      left: 15px;
+      background: url("../../img/arrows.png");
+      background-position: 14px 0;
+      width: 11px;
+      height: 19px;
+      z-index: 20;
+    }
+  }
+}

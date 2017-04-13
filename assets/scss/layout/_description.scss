@@ -1,0 +1,50 @@
+.dable-main {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+
+  margin-bottom: 57px;
+}
+
+.description {
+  width: calc(100% - 131px);
+  margin-right: 33px;
+
+  &__title {
+    font-family: 'Open Sans';
+    color: #0072bc;
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: left;
+    padding-bottom: 34px;
+  }
+
+  h4,
+  p {
+    @include roboto-c-400;
+    color: #474747;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+    margin-bottom: 25px;
+  }
+
+  h4 {
+    @include roboto-c-700;
+    text-transform: uppercase;
+  }
+
+  &__quote {
+    @include roboto-c-700;
+    color: #000;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 24px;
+    text-align: left;
+  }
+}
+
+.social-item {
+  margin-bottom: 19px;
+}

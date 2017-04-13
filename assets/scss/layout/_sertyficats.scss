@@ -45,8 +45,7 @@
       text-transform: uppercase;
     }
   }
-}
-
+  
 .slick-prev {
   position: absolute;
   top: 0;
@@ -82,7 +81,8 @@
   width: 39px;
   height: 300px;
   font-size: 0;
-  background-color: rgba(0, 0, 0, 0.68);
+  background-color: rgba(0, 0, 0, 0.68
+  );
 
   &::after {
     content: "";
@@ -96,4 +96,5 @@
     height: 19px;
     z-index: 20;
   }
+}
 }
