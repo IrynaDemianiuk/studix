@@ -37,7 +37,8 @@
 
   &__link {
     display: block;
-    @include roboto-700;
+    font-family: "Roboto";
+    font-weight: 400;
     color: rgba(37, 37, 37, 0.76);
     font-size: 16px;
     line-height: 12px;
@@ -52,6 +53,11 @@
       font-size: 24px;
       padding: 26px 13px 27px;
       text-align: center;
+    }
+
+    &--active {
+      @include roboto-700;
+      color: #000;
     }
 
     &:hover {

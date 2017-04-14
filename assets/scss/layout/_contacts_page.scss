@@ -1,0 +1,124 @@
+.contacts-page {
+  width: calc(100% - 340px);
+  margin-right: 33px;
+
+  &__title {
+    @include roboto-c-700;
+    color: #f7941d;
+    font-size: 24px;
+    line-height: 25px;
+    text-align: left;
+    margin-bottom: 28px;
+  }
+
+  &__city {
+    display: block;
+    font-family: 'Roboto';
+    color: #3898d7;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 12px;
+    text-align: left;
+    text-transform: uppercase;
+    padding-left: 13px;
+    border-left: 3px solid #3898d7;
+    margin-bottom: 12px;
+  }
+
+  &__street {
+    display: block;
+    position: relative;
+    font-family: 'Roboto';
+    color: #252525;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+    padding-left: 26px;
+    margin-bottom: 10px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 4px;
+      left: 0;
+      width: 10px;
+      height: 16px;
+      background: url("../../img/loc.png");
+    }
+  }
+
+  &__list {
+    border-top: 1px solid #e1e1e1;
+    border-bottom: 1px solid #e1e1e1;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  &__item {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 0;
+    margin-right: 60px;
+  }
+
+  &__tel {
+    display: block;
+    font-family: 'Roboto';
+    color: #393838;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+  }
+
+  &__inner {
+    padding-top: 8px;
+  }
+
+  &__email {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+
+    font-family: 'Roboto';
+    color: #5c5b5b;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+
+    margin-right: 18px;
+    padding-left: 24px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 6px;
+      left: 0;
+      width: 15px;
+      height: 11px;
+      background: url("../../img/email.png");
+    }
+  }
+
+  &__map {
+    width: 600px;
+    height: 205px;
+  }
+
+  &__map-1 {
+    background: url("../../assets/img/map-1.jpg");
+    margin-bottom: 33px;
+    margin-top: 15px;
+  }
+
+  &__map-2 {
+    background: url("../../assets/img/map-2.jpg");
+    margin-bottom: 9px;
+    margin-top: 15px;
+  }
+
+  &__map-3 {
+    background: url("../../assets/img/map-3.jpg");
+    margin-bottom: 20px;
+  }
+}

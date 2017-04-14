@@ -1,0 +1,57 @@
+.consultation {
+  background-color: #252525;
+  margin-bottom: 45px;
+
+  &__inf {
+    @include roboto-c-700;
+    color: #1b1b1b;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 20px 22px 20px 21px;
+    width: 330px;
+  }
+
+  &__quote {
+    display: block;
+    font-family: 'Open Sans';
+    color: #0072bc;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+
+  .contacts {
+    padding-left: 0;
+    padding-right: 0;
+    border: none;
+    display: inline-block;
+    padding: 29px 20px 26px 25px;
+    width: 330px;
+    border-bottom: 1px solid #e1e1e1;
+    margin-bottom: 24px;
+
+    &__title {
+      text-transform: uppercase;
+      display: inline-block;
+    }
+  }
+
+  .mode {
+    padding-left: 0;
+    padding-right: 0;
+    border: none;
+    display: inline-block;
+    width: 330px;
+    padding: 0 20px 26px 25px;
+    margin-right: 0;
+
+    &__title {
+      text-transform: uppercase;
+    }
+  }
+}

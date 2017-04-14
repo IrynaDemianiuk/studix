@@ -1,0 +1,33 @@
+.offices {
+  &__item {
+    display: block;
+    position: relative;
+
+    border-radius: 5px;
+    background-color:  #f58f00;
+    margin-bottom: 8px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 16px;
+      right: 19px;
+      width: 14px;
+      height: 8px;
+      background: url("../../img/arrow-white.png");
+    }
+  }
+
+  &__link {
+    display: block;
+
+    @include roboto-c-700;
+    color: #fff;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: left;
+    text-transform: uppercase;
+
+    padding: 13px 24px 12px 24px;
+  }
+}

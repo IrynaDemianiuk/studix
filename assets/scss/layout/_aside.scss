@@ -82,6 +82,7 @@ main {
     line-height: 18px;
     text-align: left;
     background-color: #fff;
+
     &::after {
       content: "";
       position: absolute;
@@ -89,8 +90,9 @@ main {
       right: 165px;
       width: 11px;
       height: 6px;
-      background: url(../../img/arrow-btn.png);
+      background: url("../../img/arrow-btn.png");
     }
+
     &:hover {
       border-left: 3px solid transparent;
       color: #f7941d;
