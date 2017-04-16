@@ -50,9 +50,26 @@
   background-position: top center;
   background-repeat: no-repeat;
 }
-@mixin OpenSans {
+@mixin OpenSans-300 {
   font-family: 'Open Sans', arial, sans-serif;
+  font-weight: 300;
 }
+
+@mixin OpenSans-400 {
+  font-family: 'Open Sans', arial, sans-serif;
+  font-weight: 400;
+}
+
+@mixin OpenSans-600 {
+  font-family: 'Open Sans', arial, sans-serif;
+  font-weight: 600;
+}
+
+@mixin OpenSans-700 {
+  font-family: 'Open Sans', arial, sans-serif;
+  font-weight: 700;
+}
+
 @mixin roboto-700 {
   font-family: 'Roboto', arial, sans-serif;
   font-weight: 700;

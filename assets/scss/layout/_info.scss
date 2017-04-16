@@ -1,0 +1,21 @@
+.table-body {
+  p {
+    @include roboto-c-400;
+    color: #414142;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+    margin-bottom: 30px;
+
+    span {
+      color: #f59207;
+    }
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+  .title-border-left {
+    margin-bottom: 30px;
+  }
+}

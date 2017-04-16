@@ -11,10 +11,9 @@
   margin-right: 33px;
 
   &__title {
-    font-family: 'Open Sans';
+    @include OpenSans-700;
     color: #0072bc;
     font-size: 23px;
-    font-weight: 700;
     line-height: 30px;
     text-align: left;
     padding-bottom: 34px;

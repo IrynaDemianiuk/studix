@@ -107,10 +107,9 @@ a.button {
 }
 
 .main-title {
-  font-family: 'Open Sans';
+  @include OpenSans-300;
   color: #000;
   font-size: 24px;
-  font-weight: 300;
   line-height: 25px;
   text-transform: uppercase;
 }
@@ -128,4 +127,18 @@ a.button {
 
   padding-top: 25px;
   padding-bottom: 24px;
+}
+
+.title-border-left {
+  display: block;
+  font-family: 'Roboto';
+  color: #3898d7;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 12px;
+  text-align: left;
+  text-transform: uppercase;
+  padding-left: 13px;
+  border-left: 3px solid #3898d7;
+  margin-bottom: 12px;
 }

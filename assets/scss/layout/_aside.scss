@@ -41,14 +41,47 @@ main {
     border-left: 3px solid transparent;
     margin-bottom: 4px;
     padding: 15px 14px;
+  }
 
-    &:hover {
-      border-left: 3px solid #3898d7;
-      color: #3898d7;
+  &__list-1 {
+    .aside__link {
+      &:hover {
+        border-left: 3px solid #1980c2;
+        color: #1980c2;
+      }
     }
   }
 
-  &__link-title {
+
+  &__list-2 {
+    .aside__link {
+      &:hover {
+        border-left: 3px solid #5facdf;
+        color: #5facdf;
+      }
+    }
+  }
+
+  &__list-3 {
+    .aside__link {
+      &:hover {
+        border-left: 3px solid #389db7;
+        color: #389db7;
+      }
+    }
+  }
+
+  &__list-4 {
+    .aside__link {
+      &:hover {
+        border-left: 3px solid #339bb5;
+        color: #339bb5;
+      }
+    }
+  }
+
+   &__list {
+  .aside__link-title {
     @include roboto-c-700;
     color: #fff;
     font-size: 14px;
@@ -70,11 +103,14 @@ main {
     }
 
     &-3 {
+      background-color: #339bb5;
+    }
+    &-4 {
       background-color: #2594b0;
     }
   }
 
-  &__link-btn {
+  .aside__link-btn {
     position: relative;
     font-family: 'Roboto';
     color: #f7941d;
@@ -96,8 +132,10 @@ main {
     &:hover {
       border-left: 3px solid transparent;
       color: #f7941d;
+      opacity: 0.7;
     }
   }
+}
 }
 
 main {

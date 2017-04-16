@@ -26,7 +26,7 @@
   width: 600px;
 
   &__title {
-    @include OpenSans;
+    @include OpenSans-700;
     color: #fff;
     font-size: 36px;
     line-height: 48px;
@@ -39,10 +39,9 @@
   }
 
   &__text {
-    @include OpenSans;
+    @include OpenSans-400;
     color: #fff;
     font-size: 18px;
-    font-weight: 400;
     line-height: 24px;
     text-align: left;
     padding-top: 25px;
@@ -92,43 +91,44 @@
     padding: 12px 13px 14px 12px;
 
     &[placeholder] {
-      font-family: 'Open Sans';
+      @include OpenSans-400;
       color: rgba(37, 37, 37, 0.76);
       font-size: 14px;
-      font-weight: 400;
       line-height: 18px;
       text-align: left;
     }
   }
+
   &__btn {
     display: block;
     width: 100%;
     @include roboto-700;
-    color:  #fff;
+    color: #fff;
     font-size: 18px;
     line-height: 12px;
     text-align: center;
     background-color: #f58f00;
     text-transform: uppercase;
-
-    padding: 23px 23px 24px 23px;
+    cursor: pointer;
+    padding: 23px 23px 24px;
   }
 }
 
 .promo-questionary {
-  background-color:  rgba(37, 37, 37, 0.76);
-width: 470px;
-padding: 12px 13px 14px 12px;
-&__btn {
-  display: block;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  color: #ffffff;
-  font-size: 18px;
-  line-height: 12px;
-  text-align: center;
-  background-color: #0072bc;
-  text-transform: uppercase;
-  padding: 22px 23px 21px 23px;
-}
+  background-color: rgba(37, 37, 37, 0.76);
+  width: 470px;
+  padding: 12px 13px 14px 12px;
+
+  &__btn {
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 12px;
+    text-align: center;
+    background-color: #0072bc;
+    text-transform: uppercase;
+    padding: 22px 23px 21px;
+  }
 }
