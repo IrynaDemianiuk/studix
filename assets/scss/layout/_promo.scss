@@ -1,5 +1,27 @@
+.js-slider {
+  @include respond-to(sm) {
+    display: none;
+  }
+}
+
 .slider {
   position: relative;
+  @include respond-to(sm) {
+    height: auto ;
+  }
+
+  .slider-mobile {
+    display: none;
+    @include respond-to(sm) {
+      display: block;
+      width: 100%;
+    }
+    img {
+      @include respond-to(sm) {
+        width: 100%;
+      }
+    }
+  }
 
   &__picture {
     margin: auto;
@@ -13,6 +35,9 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
+    @include respond-to(sm) {
+      height: 100%;
+    }
   }
 }
 
@@ -36,6 +61,16 @@
     span {
       color: #f58f00;
     }
+
+    @include respond-to(sm) {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-70%);
+      text-align: center;
+      width: 100%;
+      margin: 0 auto;
+      text-transform: uppercase;
+    }
   }
 
   &__text {
@@ -46,6 +81,9 @@
     text-align: left;
     padding-top: 25px;
     margin-bottom: 32px;
+    @include respond-to(sm) {
+      display: none;
+    }
   }
 
   &__btn {
@@ -55,10 +93,17 @@
     color: #ffffff;
     font-size: 18px;
     line-height: 12px;
-    text-align: left;
+    text-align: center;
     background-color: #0072bc;
     text-transform: uppercase;
     padding: 22px 77px 21px 78px;
+    @include respond-to(sm) {
+      position: absolute;
+      background: #f7941d;
+      left: -15px;
+      bottom: 0;
+      right: 50%;
+    }
   }
 }
 
@@ -72,6 +117,9 @@
   margin-bottom: 9px;
   background-color: rgba(37, 37, 37, 0.76);
   width: 470px;
+  @include respond-to(sm) {
+    display: none;
+  }
 
   &__title {
     @include roboto-c-400;
@@ -118,6 +166,10 @@
   background-color: rgba(37, 37, 37, 0.76);
   width: 470px;
   padding: 12px 13px 14px 12px;
+  @include respond-to(sm) {
+    padding: 0;
+    width: auto;
+  }
 
   &__btn {
     display: block;
@@ -130,5 +182,11 @@
     background-color: #0072bc;
     text-transform: uppercase;
     padding: 22px 23px 21px;
+    @include respond-to(sm) {
+      position: absolute;
+      right: -15px;
+      bottom: 0;
+      left: 50%;
+    }
   }
 }

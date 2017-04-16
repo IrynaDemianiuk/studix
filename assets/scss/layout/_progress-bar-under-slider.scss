@@ -16,6 +16,8 @@
 	  right : 100%;
 	  animation: progress 3.3s linear infinite;
 	}
-
+  @include respond-to(sm) {
+    display: none;
+  }
   }
 }

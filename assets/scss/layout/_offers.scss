@@ -1,14 +1,26 @@
 .offers {
   margin-bottom: 45px;
+  @include respond-to(sm) {
+   margin-top: 20px;
+}
   &__title {
     text-align: left;
     margin-bottom: 26px;
+    @include respond-to(sm) {
+     display: none;
+  }
   }
 
   &__flex-inner {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: space-around;
+  }
+
+  &__btn {
+    @include respond-to(sm) {
+     display: none;
+  }
   }
 }
 
@@ -16,6 +28,10 @@
   display: block;
   position: relative;
   margin-bottom: 20px;
+  //
+  @include respond-to(sm) {
+   width: 100%;
+}
 
   &__title {
     position: absolute;
@@ -55,5 +71,9 @@
   &__picture img {
     width: 298px;
     height: 245px;
+    @include respond-to(sm) {
+    width: 100%;
+    height:auto;
+  }
   }
 }

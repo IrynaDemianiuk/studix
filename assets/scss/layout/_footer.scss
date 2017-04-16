@@ -1,6 +1,6 @@
 .page-footer {
   background: url("../../img/footer.jpg");
-  padding-top: 35px;
+  padding-top: 30px;
   padding-bottom: 35px;
   max-height: 512px;
 }
@@ -8,10 +8,16 @@
 .coutries {
   &-poland {
     margin-right: 68px;
+    @include respond-to(md) {
+      margin-right: 0;
+    }
   }
 
   &-czech {
     margin-right: 85px;
+    @include respond-to(md) {
+      margin-right: 0;
+    }
   }
 }
 
@@ -22,7 +28,7 @@
   line-height: 25px;
   text-align: left;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .footer {
@@ -36,7 +42,11 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    margin-right: 85px;
+    margin-right: 65px;
+    @include respond-to(md) {
+      margin-right: 30px;
+      justify-content: space-around;
+    }
 
     &__item {
       &-padding {
@@ -48,8 +58,12 @@
       @include OpenSans-600;
       color: #fff;
       font-size: 14px;
-      line-height: 2;
+      line-height: 1.8;
       text-align: left;
+
+      @include respond-to(md) {
+        font-size: 12px;
+      }
 
       &:hover {
         text-decoration: underline;
@@ -61,12 +75,14 @@
     }
 
     .copyright {
+      flex: 1 100%;
       font-family: 'calibri';
       color: #d0d0d0;
       font-size: 14px;
       font-weight: 400;
       line-height: 18px;
-      text-align: center;
+      text-align: left;
+      margin-top: 20px;
 
       &__link {
         text-decoration: underline;
@@ -91,7 +107,14 @@
       &__title {
         text-align: left;
         text-transform: uppercase;
-        margin-bottom: 25px;
+        margin-bottom: 15px;
+      }
+
+      &__inf {
+        @include respond-to(md) {
+          font-size: 12px;
+          display: inline-block;
+        }
       }
 
       &__left {
@@ -104,28 +127,46 @@
 
       &__inf {
         line-height: 1.8;
+        @include respond-to(md) {
+          line-height: 1.3;
+        }
       }
     }
 
     .mode {
       border-right: none;
-      margin-bottom: 15px;
+
       padding-left: 0;
       padding-right: 0;
 
       &__title {
         text-align: left;
         text-transform: uppercase;
-
+        @include respond-to(md) {
+          font-size: 16px;
+        }
       }
 
       &__time {
-        line-height: 2;
+        line-height: 1.3;
+        margin-bottom: 0;
+        @include respond-to(md) {
+          font-size: 12px;
+        }
+      }
+      &__email {
+        @include respond-to(md) {
+          font-size: 12px;
+        }
       }
     }
 
     .social {
       margin-bottom: 20px;
+      @include respond-to(md) {
+        width: 100%;
+        margin-bottom: 16px;
+      }
     }
   }
 }
@@ -140,6 +181,11 @@
     text-align: left;
     text-transform: uppercase;
     margin-bottom: 20px;
+    @include respond-to(md) {
+      font-size: 12px;
+      line-height: 16px;
+      margin-bottom: 15px;
+    }
   }
 
   &__form {

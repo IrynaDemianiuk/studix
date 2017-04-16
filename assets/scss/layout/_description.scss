@@ -44,6 +44,31 @@
   }
 }
 
-.social-item {
+.social-group {
+   &__item {
   margin-bottom: 19px;
+}
+&__vk {
+  background: url("../../img/vk.jpg"); //TEMP
+  width: 299px; //TEMP
+  height: 435px; //TEMP
+}
+
+&__fb {
+  background: url("../../img/fb.jpg"); //TEMP
+  width: 298px; //TEMP
+  height: 362px; //TEMP
+}
+
+&__tw {
+  background: url("../../img/tw.jpg"); //TEMP
+  width: 311px; //TEMP
+  height: 373px; //TEMP
+}
+
+&__inst {
+  background: url("../../img/inst.jpg"); //TEMP
+  width: 298px; //TEMP
+  height: 412px; //TEMP
+}
 }

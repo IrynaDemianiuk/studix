@@ -143,7 +143,7 @@
     padding-left: 20px;
     padding-right: 20px;
   }
-  @include respond-to(xs) {
+  @include respond-to(sm) {
     display: none;
   }
 
