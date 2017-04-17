@@ -3,6 +3,13 @@
   padding-top: 30px;
   padding-bottom: 35px;
   max-height: 512px;
+  @include respond-to(sm) {
+padding-left: 15px;
+padding-right: 15px;
+background: url("../../img/footer-xs.jpg");
+background-size: cover;
+max-height: 806px;
+  }
 }
 
 .coutries {
@@ -29,6 +36,13 @@
   text-align: left;
   text-transform: uppercase;
   margin-bottom: 10px;
+  @include respond-to(sm) {
+    border: 1px solid #f7941d;
+    padding: 13px 0;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 20px;
+  }
 }
 
 .footer {
@@ -36,6 +50,9 @@
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
+    @include respond-to(sm) {
+      flex-flow: column nowrap;
+    }
   }
 
   &-countries {
@@ -47,8 +64,15 @@
       margin-right: 30px;
       justify-content: space-around;
     }
+    @include respond-to(sm) {
+      flex-flow: column nowrap;
+      margin-right: 0;
+    }
 
     &__item {
+      @include respond-to(sm) {
+        display: none;
+      }
       &-padding {
         margin-bottom: 30px;
       }
@@ -83,6 +107,9 @@
       line-height: 18px;
       text-align: left;
       margin-top: 20px;
+      @include respond-to(sm) {
+        display: none;
+      }
 
       &__link {
         text-decoration: underline;
@@ -96,6 +123,10 @@
     width: 265px;
     display: flex;
     flex-flow: column nowrap;
+    @include respond-to(sm) {
+      align-items: center;
+      width: 100%;
+    }
 
     .contacts {
       border-left: none;
@@ -103,11 +134,18 @@
       margin-bottom: 20px;
       padding-left: 0;
       padding-right: 0;
+      @include respond-to(sm) {
+        display: block;
+        width: auto;
+      }
 
       &__title {
         text-align: left;
         text-transform: uppercase;
         margin-bottom: 15px;
+        @include respond-to(sm) {
+          text-align: center;
+        }
       }
 
       &__inf {
@@ -119,10 +157,17 @@
 
       &__left {
         float: none;
+        @include respond-to(sm) {
+          float: left;
+        }
       }
 
       &__right {
         float: none;
+        @include respond-to(sm) {
+          float: right;
+          width: 170px;
+        }
       }
 
       &__inf {
@@ -138,12 +183,18 @@
 
       padding-left: 0;
       padding-right: 0;
+      @include respond-to(sm) {
+        display: block;
+    }
 
       &__title {
         text-align: left;
         text-transform: uppercase;
         @include respond-to(md) {
           font-size: 16px;
+        }
+        @include respond-to(sm) {
+          text-align: center;
         }
       }
 
@@ -152,6 +203,11 @@
         margin-bottom: 0;
         @include respond-to(md) {
           font-size: 12px;
+        }
+        @include respond-to(sm) {
+          display: block;
+          width: 150px;
+          margin: 0 auto;
         }
       }
       &__email {
@@ -167,11 +223,73 @@
         width: 100%;
         margin-bottom: 16px;
       }
+      @include respond-to(sm) {
+        display: block;
+        width: 600px;
+        margin: 0 auto;
+      }
     }
-  }
+    .social__link {
+      @include respond-to(sm) {
+        width: 95px;
+        height: 94px;
+        margin-right: 2px;
+        &:before {
+          width: 33px;
+          height: 35px;
+          margin: -15px -10px;
+          background: url("../../img/social-xs.png");
+
+        }
+      }
+        .social__fb {
+          &:before {
+            background-position: 0 18px;
+            width: 9px;
+            left: 50%;
+            margin-left: -4px;
+          }
+        }
+
+        .social__vk {
+          &:before {
+            background-position: -120px 19px;
+          }
+        }
+
+        .social__tw {
+          &:before {
+            background-position: -84px 19px;
+          }
+        }
+        .social__google {
+          &:before {
+            background-position: -127px 19px;
+          }
+        }
+
+        .social__inst {
+          &:before {
+            background-position: -173px 19px;
+          }
+        }
+
+        .social__youtube {
+          margin-right: 0;
+          &:before {
+            height: 44px;
+            background-position: -215px 20px;
+          }
+        }
+      }
+    }
+
 }
 
 .subscribe {
+  @include respond-to(sm) {
+    display: none;
+  }
   &__title {
     font-family: 'Roboto';
     color: #f7941d;

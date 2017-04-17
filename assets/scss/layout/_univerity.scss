@@ -93,14 +93,13 @@
   }
 }
 
-.table-head {
+.tabs-books {
   &__list {
     display: flex;
     flex-flow: row nowrap;
   }
 
   &__link {
-    display: block;
     @include roboto-c-700;
     color: #808080;
     font-size: 14px;
@@ -111,15 +110,14 @@
     border-radius: 5px;
     margin-right: 1px;
     padding: 18px 18px 17px 19px;
-
     &--active {
-      background-color: #f58f00;
-      color: #fff;
-    }
+     background-color: #f58f00;
+     color: #fff;
   }
+ }
 }
 
-.table-body {
+.tabs-box {
   border: 1px solid #ebebeb;
   padding: 30px 25px 30px 25px;
   margin-bottom: 48px;

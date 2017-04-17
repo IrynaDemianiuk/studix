@@ -1,5 +1,8 @@
 .sertyficats {
   padding-top: 45px;
+  @include respond-to(sm) {
+    display: none;
+  }
 
   &-slider {
     position: relative;
@@ -35,7 +38,6 @@
       transform: translate(-50%, -50%);
       width: 106px;
       height: 58px;
-
       @include roboto-c-700;
       color: #fff;
       font-size: 14px;
@@ -45,56 +47,65 @@
       text-transform: uppercase;
     }
   }
-  
-.slick-prev {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 15;
-  width: 39px;
-  height: 300px;
-  font-size: 0;
-  background-color: rgba(0, 0, 0, 0.68);
 
-  &::before {
-    content: "";
+  .slick-prev {
     position: absolute;
-    top: 140px;
+    top: 0;
     bottom: 0;
-    left: 15px;
-    background: url("../../img/arrows.png");
-    background-position: 0 0;
-    width: 11px;
-    height: 19px;
-    z-index: 20;
+    left: 0;
+    z-index: 15;
+    width: 39px;
+    height: 300px;
+    font-size: 0;
+    background-color: rgba(0, 0, 0, 0.68);
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 140px;
+      bottom: 0;
+      left: 15px;
+      background: url("../../img/arrows.png");
+      background-position: 0 0;
+      width: 11px;
+      height: 19px;
+      z-index: 20;
+    }
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
   }
-}
 
-.slick-next {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  z-index: 15;
-  font-size: 0;
-  width: 39px;
-  height: 300px;
-  font-size: 0;
-  background-color: rgba(0, 0, 0, 0.68
-  );
-
-  &::after {
-    content: "";
+  .slick-next {
     position: absolute;
-    top: 140px;
+    top: 0;
     bottom: 0;
-    left: 15px;
-    background: url("../../img/arrows.png");
-    background-position: 14px 0;
-    width: 11px;
-    height: 19px;
-    z-index: 20;
+    right: 0;
+    z-index: 15;
+    font-size: 0;
+    width: 39px;
+    height: 300px;
+    font-size: 0;
+    background-color: rgba(0, 0, 0, 0.68 );
+    cursor: pointer;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 140px;
+      bottom: 0;
+      left: 15px;
+      background: url("../../img/arrows.png");
+      background-position: 14px 0;
+      width: 11px;
+      height: 19px;
+      z-index: 20;
+    }
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
   }
-}
 }

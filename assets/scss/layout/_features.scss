@@ -1,4 +1,7 @@
 .features {
+  @include respond-to(sm) {
+    display: none;
+  }
   &__flex-inner {
     display: flex;
     flex-flow: row nowrap;

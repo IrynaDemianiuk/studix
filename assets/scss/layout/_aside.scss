@@ -9,7 +9,11 @@
 }
 
 .main-aside {
+  width: 298px;
   margin-right: 29px;
+  @include respond-to(sm) {
+    width: auto;
+  }
   @include respond-to(sm) {
     flex-flow: column;
     margin-right: 0;

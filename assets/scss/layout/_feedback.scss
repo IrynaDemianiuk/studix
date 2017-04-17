@@ -1,5 +1,8 @@
 .feedback {
   padding-top: 40px;
+  @include respond-to(sm) {
+    display: none;
+  }
 
   &__title {
     text-align: center;
@@ -21,6 +24,9 @@
     flex-flow: column;
     width: 297px;
     margin-right: 30px;
+    &:last-child {
+      margin-right: 0;
+    }
   }
 
   &__picture {

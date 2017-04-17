@@ -124,9 +124,14 @@ a.button {
   line-height: 25px;
   text-align: center;
   text-transform: uppercase;
-
+  background-color:  #f9f9f9;
   padding-top: 25px;
   padding-bottom: 24px;
+  cursor: pointer;
+  &:hover {
+    background-color: #0072bc;
+    color: #fff;
+  }
 }
 
 .title-border-left {

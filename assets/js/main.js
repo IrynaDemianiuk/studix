@@ -60,7 +60,7 @@ const front = {
 
     },
     fadeIn:function (el,display) {
-        el.style.opacity = 0;
+        el.style.opacity = 1;
         el.style.display = display || "block";
 
         (function fade() {
@@ -72,7 +72,7 @@ const front = {
         })();
     },
     fadeOut:function (el) {
-        el.style.opacity = 1;
+        el.style.opacity = 0;
 
         (function fade() {
             if ((el.style.opacity -= .1) < 0) {
@@ -91,8 +91,8 @@ const front = {
     classicTabs: function (link, content, active) {
         active = typeof active !== 'undefined' ? active : 0;
 
-        const nodeListLink = document.querySelectorAll(link);
-        const nodeListCont = document.querySelectorAll(content);
+        const nodeListLink = document.querySelectorAll(".tabs-books__link");
+        const nodeListCont = document.querySelectorAll(".tabs-box");
 
         [].forEach.call(nodeListLink, function(el){
            el.addEventListener('click',function (e) {
@@ -124,6 +124,7 @@ const front = {
     init: function () {
         this.MobileMenuOpenClose();
         this.Slider.init();
+        this.classicTabs( "nodeListLink", "nodeListCont", 0);
 
         // виклик
         // this.classicTabs( ".tab-li", ".tab-cont", 2);

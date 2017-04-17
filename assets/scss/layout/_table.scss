@@ -1,21 +1,21 @@
-.table-body {
+.tabs-box {
   border: 1px solid #e1e1e1;
   width: 100%;
 
   &__table {
-      border-spacing: 0px;
+    border-spacing: 0;
   }
 
   &__title {
     display: block;
     font-family: 'Roboto';
-color:  #f58f00;
-font-size: 16px;
-font-weight: 700;
-line-height: 25px;
-text-align: left;
-text-transform: uppercase;
-margin-bottom: 23px;
+    color: #f58f00;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 25px;
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 23px;
   }
 
   &__cell {
@@ -25,7 +25,7 @@ margin-bottom: 23px;
   thead {
     background: #0072bc;
 
-    .table-body__cell {
+    .tabs-box__cell {
       font-family: 'Roboto';
       color: #ffffff;
       font-size: 16px;
@@ -38,7 +38,7 @@ margin-bottom: 23px;
   }
 
   tbody {
-    .table-body__cell {
+    .tabs-box__cell {
       font-family: 'Roboto';
       color: #323131;
       font-size: 16px;
@@ -47,23 +47,24 @@ margin-bottom: 23px;
       padding: 16px 28px;
     }
 
-    .table-body__cell:first-child {
+    .tabs-box__cell:first-child {
       color: #3c3b3b;
       font-weight: 700;
       text-transform: uppercase;
-      background-color:  #f9f9f9;
+      background-color: #f9f9f9;
     }
 
-    .table-body__cell:last-child {
+    .tabs-box__cell:last-child {
       text-align: center;
     }
   }
+
   &__text {
     font-family: 'Roboto';
-color:  #626262;
-font-size: 16px;
-line-height: 25px;
-text-align: left;
-margin-top: 29px;
+    color: #626262;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: left;
+    margin-top: 29px;
   }
 }

@@ -9,6 +9,10 @@
 .description {
   width: calc(100% - 300px);
   margin-right: 33px;
+  @include respond-to(sm) {
+    width: 100%;
+    padding-left: 20px;
+  }
 
   &__title {
     @include OpenSans-700;
@@ -45,6 +49,9 @@
 }
 
 .social-group {
+  @include respond-to(sm) {
+    display: none;
+  }
    &__item {
   margin-bottom: 19px;
 }

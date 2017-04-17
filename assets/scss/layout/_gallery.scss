@@ -1,6 +1,9 @@
 .gallery {
   padding-top: 45px;
   margin-bottom: 58px;
+  @include respond-to(sm) {
+    display: none;
+  }
 
   &-slider {
     position: relative;
@@ -36,7 +39,6 @@
       transform: translate(-50%, -50%);
       width: 106px;
       height: 58px;
-
       @include roboto-c-700;
       color: #fff;
       font-size: 14px;
@@ -57,6 +59,7 @@
     height: 151px;
     font-size: 0;
     background-color: rgba(0, 0, 0, 0.68);
+    cursor: pointer;
 
     &::before {
       content: "";
@@ -64,11 +67,15 @@
       top: 70px;
       bottom: 0;
       left: 15px;
-      background: url(../../img/arrows.png);
+      background: url("../../img/arrows.png");
       background-position: 0 0;
       width: 11px;
       height: 19px;
       z-index: 20;
+    }
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.3);
     }
   }
 
@@ -82,8 +89,8 @@
     width: 39px;
     height: 151px;
     font-size: 0;
-    background-color: rgba(0, 0, 0, 0.68
-    );
+    background-color: rgba(0, 0, 0, 0.68 );
+    cursor: pointer;
 
     &::after {
       content: "";
@@ -96,6 +103,10 @@
       width: 11px;
       height: 19px;
       z-index: 20;
+    }
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.3);
     }
   }
 }
