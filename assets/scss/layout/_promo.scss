@@ -57,6 +57,7 @@
     line-height: 48px;
     text-align: left;
     padding-bottom: 25px;
+    padding-right: 30px;
 
     span {
       color: #f58f00;
@@ -70,6 +71,13 @@
       width: 100%;
       margin: 0 auto;
       text-transform: uppercase;
+    }
+    @include respond-to(sm) {
+      font-size: 32px;
+    }
+    @include respond-to(479) {
+      font-size: 26px;
+      line-height: 36px;
     }
   }
 
@@ -103,6 +111,9 @@
       left: -15px;
       bottom: 0;
       right: 50%;
+    }
+    @include respond-to(479) {
+      font-size: 16px;
     }
   }
 }
@@ -187,6 +198,9 @@
       right: -15px;
       bottom: 0;
       left: 50%;
+    }
+    @include respond-to(479) {
+      font-size: 16px;
     }
   }
 }
