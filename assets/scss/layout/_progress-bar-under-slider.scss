@@ -2,7 +2,7 @@
   &__progress-bar{
 	display : block;
 	max-width: 1920px;
-  margin: auto;
+  	margin: auto;
 	height : 5px;
 	background : #ccc;
 	position : relative;
@@ -16,8 +16,8 @@
 	  right : 100%;
 	  animation: progress 3.3s linear infinite;
 	}
-  @include respond-to(sm) {
-    display: none;
-  }
+	@include respond-to(sm) {
+	  display: none;
+	}
   }
 }

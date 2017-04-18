@@ -2,578 +2,713 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Stud!x</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|PT+Sans:400,700|Roboto+Condensed:400,700,700i|Roboto:300,400,700&amp;subset=cyrillic" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/vendor/slick.css">
-  <link rel="stylesheet" href="assets/css/compressed/style.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.css" />
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Stud!x</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|PT+Sans:400,700|Roboto+Condensed:400,700,700i|Roboto:300,400,700&amp;subset=cyrillic"
+		  rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/vendor/slick.css">
+	<link rel="stylesheet" href="assets/css/compressed/style.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.css"/>
 </head>
 
 <body>
 
-  <header class="page-header">
-
-    <div class="top-header">
-      <div class="container">
-        <div class="top-header__flex-inner">
-          <div class="logo">
-            <a href="index.html" class="logo__link">
-              <picture>
-                <source media="(min-width:1200px)" srcset="assets/img/logo.png">
-                <img class="logo__picture" src="assets/img/logo-xs.png" alt="Stud!x">
-                <p class="logo__text">освіта за кордоном</p>
-              </picture>
-            </a>
-          </div>
-
-          <ul class="language">
-            <li class="language__item"><a class="language__link  language__ua">UA</a></li>
-            <li class="language__item"><a class="language__link  language__ru">RU</a></li>
-            <li class="language__item"><a class="language__link  language__en">EN</a></li>
-            <li class="language__item"><a class="language__link  language__pl">PL</a></li>
-          </ul>
-
-          <div class="contacts">
-            <p class="contacts__title">Контакты</p>
-            <div class="contacts__container">
-              <p class="contacts__left">
-                <a href='tel:+380678657704' class="contacts__inf">+38 0678657704</a>
-                <a href='tel:+380678657704' class="contacts__inf">+38 0638346088</a>
-              </p>
-              <p class="contacts__right">
-                <a href='tel:+380678657704' class="contacts__inf">+38 0994529077</a><br>
-                <a href="skype:Studix.eu?add" class="contacts__inf  contacts__skype">Studix.eu</a>
-              </p>
-            </div>
-          </div>
-
-          <div class="mode">
-            <p class="mode__title">График работы</p>
-            <div class="mode__cantainer">
-              <span class="mode__time">Пн-Пт: 10:00-18:00</span>
-              <a href='mailto:studix.eu@gmail.com' class="mode__email">studix.eu@gmail.com</a>
-            </div>
-          </div>
-
-          <ul class="social">
-            <li class="social__item">
-              <a class="social__link  social__fb" href="#"></a>
-            </li>
-            <li class="social__item">
-              <a class="social__link  social__vk" href="#"></a>
-            </li>
-            <li class="social__item">
-              <a class="social__link  social__tw" href="#"></a>
-            </li>
-            <li class="social__item">
-              <a class="social__link  social__google" href="#"></a>
-            </li>
-            <li class="social__item">
-              <a class="social__link  social__inst" href="#"></a>
-            </li>
-            <li class="social__item">
-              <a class="social__link  social__youtube" href="#"></a>
-            </li>
-          </ul>
-
-          <div class="toggle  toggle--closed">
-            <!-- toggle--closed toggle--opened-->
-            <button class="toggle-btn  toggle-btn--closed" type="button"></button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="menu">
-      <div class="container menu__container">
-        <div class="menu__flex-inner  menu__flex-inner--closed">
-
-          <ul class="menu__list">
-            <li class="menu__item"><a href="#" class="menu__link">еврошкола</a></li>
-            <li class="menu__item"><a href="#" class="menu__link">польша</a></li>
-            <li class="menu__item"><a href="#" class="menu__link">чехия</a></li>
-            <li class="menu__item"><a href="#" class="menu__link">словакия</a></li>
-            <li class="menu__item"><a href="#" class="menu__link">услуги</a></li>
-            <li class="menu__item"><a href="#" class="menu__link">карта поляка</a></li>
-            <li class="menu__item"><a href="#" class="menu__link  menu__link--active">контакты</a></li>
-          </ul>
-
-          <div class="search">
-            <ul class="search__list">
-              <li>
-                <form action="search-result" class="search__form">
-                  <i class='search__icon'></i>
-                  <input class="search__input" type="text" placeholder="поиск по сайту..." name="search-input">
-                </form>
-              </li>
-            </ul>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    <div class="slider">
-      <div class="js-slider">
-
-        <div class="slider-item">
-          <img src="assets/img/slide-1.jpg" alt="" class="slider__picture">
-        </div>
-
-        <div class="slider-item">
-          <img src="assets/img/slide-2.jpg" alt="" class="slider__picture">
-        </div>
-
-        <div class="slider-item">
-          <img src="assets/img/slide-3.jpg" alt="" class="slider__picture">
-        </div>
-
-      </div>
-
-
-      <div class="container">
-        <div class="promo">
-
-          <div class="promo-inf">
-            <h1 class="promo-inf__title"><span>Лучшие</span> вузы Польши <br>с группой Studix!</h1>
-            <p class="promo-inf__text">
-              Университеты Польши с каждым годом становятся все популярнее среди наших студентов.<br> Как выбрать именно «свой» университет?<br> Подойти к этому вопросу надо основательно,<br> ведь выбор ВУЗа и специальности, это...
-            </p>
-            <a href="" class="promo-inf__btn">подробнее</a>
-          </div>
-
-          <div class="promo-connection">
-            <div class="promo-form">
-              <form action="search-result" class="search__form">
-                <h2 class="promo-form__title">запишитесь на собеседование</h2>
-                <input class="promo-form__input" type="text" placeholder="Ваше имя и фамилия" name="promo-input">
-                <input class="promo-form__input" type="text" placeholder="Ваш номер телефона" name="promo-input">
-                <input class="promo-frm__input" type="text" placeholder="Ваш e-mail" name="promo-input">
-                <button type="submit" class="promo-form__btn">отправить!</button>
-              </form>
-            </div>
-
-            <div class="promo-questionary">
-              <a href="" class="promo-questionary__btn">заполнить анкету</a>
-            </div>
-          </div>
-
-
-        </div>
-      </div>
-      <div class="slider__progress-bar"></div>
-
-    </div>
-
-  </header>
-
-  <div class="container">
-    <div class="flex-wrapper">
-
-      <aside class="main-aside">
-        <div class="aside__flex-inner">
-
-          <h2 class="aside__title">УНИВЕРСИТЕТЫ</h2>
-
-          <ul class="aside__list  aside__list-1">
-            <li class="aside__item"><a href="" class="aside__link  aside__link-title  aside__link-title-1">среднее образование</a></li>
-            <li class="aside__item"><a href="" class="aside__link">Техникум в Ополе Любельском</a></li>
-            <li class="aside__item"><a href="" class="aside__link">Коллегиум св. Костки</a></li>
-            <li class="aside__item"><a href="" class="aside__link">Спортивная школа в Кракове</a></li>
-            <li class="aside__item"><a href="" class="aside__link">Техникум в Скале (Краков)</a></li>
-            <li class="aside__item"><a href="" class="aside__link">Рекламно-полиграфический техникум в Кракове</a></li>
-            <li class="aside__item"><a href="" class="aside__link  aside__link-btn">ПОКАЗАТЬ ВСЕ</a></li>
-          </ul>
-
-          <ul class="aside__list  aside__list-2">
-            <li class="aside__item"><a href="" class="aside__link   aside__link-title  aside__link-title-2">ВАРШАВА</a></li>
-            <li class="aside__item"><a href="" class="aside__link">Варшавский университет</a></li>
-            <li class="aside__item"><a href="" class="aside__link">Варшавский Экономический Университет SGH</a></li>
-            <li class="aside__item"><a href="info.html" class="aside__link">Варшавская политехника</a></li>
-            <li class="aside__item"><a href="" class="aside__link">Варшавский сельскохозяйственный университет SGGW</a></li>
-            <li class="aside__item"><a href="" class="aside__link">Академия им. Леона Козминского</a></li>
-            <li class="aside__item"><a href="" class="aside__link  aside__link-btn">ПОКАЗАТЬ ВСЕ</a></li>
-          </ul>
-
-          <ul class="aside__list  aside__list-3">
-            <li class="aside__item"><a href="" class="aside__link   aside__link-title  aside__link-title-3">КРАКОВ</a></li>
-            <li class="aside__item"><a href="" class="aside__link">Варшавский университет</a></li>
-            <li class="aside__item"><a href="" class="aside__link">Варшавский Экономический Университет SGH</a></li>
-            <li class="aside__item"><a href="" class="aside__link">Варшавская политехника</a></li>
-            <li class="aside__item"><a href="" class="aside__link">Варшавский сельскохозяйственный университет SGGW</a></li>
-            <li class="aside__item"><a href="" class="aside__link">Академия им. Леона Козминского</a></li>
-            <li class="aside__item"><a href="" class="aside__link  aside__link-btn">ПОКАЗАТЬ ВСЕ</a></li>
-          </ul>
-
-          <ul class="aside__list  aside__list-4">
-            <li class="aside__item"><a href="" class="aside__link  aside__link-title  aside__link-title-4">КАТОВИЦЕ</a></li>
-            <li class="aside__item"><a href="" class="aside__link">Варшавский университет</a></li>
-            <li class="aside__item"><a href="" class="aside__link">Варшавский Экономический Университет SGH</a></li>
-            <li class="aside__item"><a href="" class="aside__link">Варшавская политехника</a></li>
-            <li class="aside__item"><a href="" class="aside__link">Варшавский сельскохозяйственный университет SGGW</a></li>
-            <li class="aside__item"><a href="" class="aside__link">Академия им. Леона Козминского</a></li>
-            <li class="aside__item"><a href="" class="aside__link  aside__link-btn">ПОКАЗАТЬ ВСЕ</a></li>
-          </ul>
-
-          <ul class="aside__list  aside__list-1">
-            <li class="aside__item"><a href="" class="aside__link  aside__link-title  aside__link-title-1">СРЕДНЕЕ ОБРАЗОВАНИЕ</a></li>
-            <li class="aside__item"><a href="" class="aside__link">Техникум в Ополе Любельском</a></li>
-            <li class="aside__item"><a href="" class="aside__link">Коллегиум св. Костки</a></li>
-            <li class="aside__item"><a href="" class="aside__link">Спортивная школа в Кракове</a></li>
-            <li class="aside__item"><a href="" class="aside__link">Техникум в Скале (Краков)</a></li>
-            <li class="aside__item"><a href="" class="aside__link">Рекламно-полиграфический техникум в Кракове</a></li>
-            <li class="aside__item"><a href="" class="aside__link  aside__link-btn">ПОКАЗАТЬ ВСЕ</a></li>
-          </ul>
-
-          <ul class="aside__list  aside__list-2">
-            <li class="aside__item"><a href="" class="aside__link  aside__link-title  aside__link-title-2">Варшава</a></li>
-            <li class="aside__item"><a href="" class="aside__link">Варшавский университет</a></li>
-            <li class="aside__item"><a href="" class="aside__link">Варшавский Экономический Университет SGH</a></li>
-            <li class="aside__item"><a href="" class="aside__link">Варшавская политехника</a></li>
-            <li class="aside__item"><a href="" class="aside__link">Варшавский сельскохозяйственный университет SGGW</a></li>
-            <li class="aside__item"><a href="" class="aside__link">Академия им. Леона Козминского</a></li>
-            <li class="aside__item"><a href="" class="aside__link  aside__link-btn">ПОКАЗАТЬ ВСЕ</a></li>
-          </ul>
-
-          <ul class="aside__list  aside__list-3">
-            <li class="aside__item"><a href="" class="aside__link  aside__link-title  aside__link-title-3">КРАКОВ</a></li>
-            <li class="aside__item"><a href="" class="aside__link">Варшавский университет</a></li>
-            <li class="aside__item"><a href="" class="aside__link">Варшавский Экономический Университет SGH</a></li>
-            <li class="aside__item"><a href="" class="aside__link">Варшавская политехника</a></li>
-            <li class="aside__item"><a href="" class="aside__link">Варшавский сельскохозяйственный университет SGGW</a></li>
-            <li class="aside__item"><a href="" class="aside__link">Академия им. Леона Козминского</a></li>
-            <li class="aside__item"><a href="" class="aside__link  aside__link-btn">ПОКАЗАТЬ ВСЕ</a></li>
-          </ul>
-
-          <ul class="aside__list  aside__list-4">
-            <li class="aside__item"><a href="" class="aside__link  aside__link-title  aside__link-title-4">КАТОВИЦЕ</a></li>
-            <li class="aside__item"><a href="" class="aside__link">Варшавский университет</a></li>
-            <li class="aside__item"><a href="" class="aside__link">Варшавский Экономический Университет SGH</a></li>
-            <li class="aside__item"><a href="" class="aside__link">Варшавская политехника</a></li>
-            <li class="aside__item"><a href="" class="aside__link">Варшавский сельскохозяйственный университет SGGW</a></li>
-            <li class="aside__item"><a href="" class="aside__link">Академия им. Леона Козминского</a></li>
-            <li class="aside__item"><a href="" class="aside__link  aside__link-btn">ПОКАЗАТЬ ВСЕ</a></li>
-          </ul>
-
-        </div>
-      </aside>
-
-      <main>
-
-        <div class="breadcrumbs">
-          <ul class="breadcrumbs__list">
-            <li class="breadcrumbs__item"><a href="index.html" class="breadcrumbs__link">Studix - Стадикс /</a></li>
-            <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Университеты / </a></li>
-            <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">ВАРШАВА / </a></li>
-            <li class="breadcrumbs__item"><a class="breadcrumbs__link breadcrumbs__link--active">Варшавская политехника</a></li>
-          </ul>
-        </div>
-
-        <section class="university">
-
-          <div class="university__top">
-            <div class="university__img">
-              <img src="assets/img/university.png" alt="" class="university__picture">
-            </div>
-
-            <div class="university__description">
-              <h2 class="university__title">Варшавский политехнический университет<br>Warszawska Politechnika</h2>
-              <a href="https://goo.gl/maps/z2BZ7CWSd362" class="university__address contacts-page__street">Plac Politechniki 1, 00-661 Warszawa</a>
-              <a href="www.pw.edu.pl" class="university__web">www.pw.edu.pl</a>
-              <p class="university__desription"><span>Государственный Варшавский политехнический университет (ВПУ)</span> – один из крупнейших и престижнейших технических ВУЗов Польши и Восточной Европы. Абсолютный «чемпион» всех технических рейтингов, рейтингов приоритетов работодателей,
-                рейтингов руководителей и зароботков.</p>
-            </div>
-          </div>
-
-          <div class="university__center">
-            <p class="university__text">Хорошая новость – студенты из стран, которые не входят в состав ЕС – Украина, Белоруссия, Россия, Молдова, Казахстан итд, имеют возможность получить высшее образование в Европе и учиться в Варшавском политехническом университете бесплатно!
-              Ежегодно выделяется определенное количество мест на различные специальности, куда иностранные студенты могут поступить на конкурсной основе и обучаться бесплатно в Польше на степень бакалавра или магистра. Язык обучения – польский.</p>
-            <p class="university__text  university__text-2">Владельцы Карты Поляка могут учиться бесплатно (стационар на польском языке) и принимать участие в стипендиальних программах (социальная, зависит от уровня доходов в семье, научная — по результатам сессии, за спортивные достижения и т.п.)
-              Документально подтвержденное польское происхождение гарантирует 30 % скидки на оплату обучения.</p>
-          </div>
-
-          <div class="tabs">
-              <ul class="tabs-books__list">
-                <li class="tabs-books__item"><a class="tabs-books__link">Инфо</a></li>
-                <li class="tabs-books__item"><a class="tabs-books__link">бесплатно</a></li>
-                <li class="tabs-books__item"><a class="tabs-books__link">бакалавр</a></li>
-                <li class="tabs-books__item"><a class="tabs-books__link">магистр</a></li>
-                <li class="tabs-books__item"><a class="tabs-books__link">english</a></li>
-                <li class="tabs-books__item"><a class="tabs-books__link">фото/видео</a></li>
-              </ul>
-
-              <div class="tabs-inner">
-              <div class="tabs-box tabs-box__info">
-                <p><span>Политехническим университетом</span> ВУЗ стал называться в 1915 году, продолжая учебные традиции Технологического института, созданного в Варшаве в 1826 году польскому благодаря ученому, философу и меценату Станиславу Сташицу. ВПУ
-                  занимает ведущие позиции в рейтингах учебных заведений Польши, благодаря высоким стандартам обучения в Варшавской политехнике, фундаментальной научно-технической базе и высококвалифицированному педагогическому составу. <b>Обучение проходит на польском и английском
-                  языках.</b></p>
-                <p>В университете обучается более 30 000 студентов из разных стран и ежегодно выпускается около 5 000 высококлассных специалистов. Согласно статистике, <span>каждый 9-ый руководитель или топ-менеджер крупной компании – выпускник Варшавской Политехники.</span></p>
-                <p>В университете 17 факультетов,. 16 из них находятся в столице Польской Республики, а один – в Плоцке. При ВПУ есть 8 исследовательских центров, с которыми сотрудничают Национальный центр развития и исследований, Министерство образования
-                  Польши, Национальный центр науки, проводятся совместные конференции и встречи, с участием известных ученых.
-                </p>
-                <p>При <b>Варшавском политехническом университете</b> действую международные программы по обмену студентами, ВУЗы-партнеры предоставляют учащимся ВПУ продолжать обучение, участвовать в международных конференциях или совместных научных проектах
-                  во многих странах мира: США, Канаде, Австралии, Китае, Японии, Великобритании, Австрии, Германии, Италии, Дании, Франции, Египта, Финляндии.</p>
-                <h3 class="title-border-left">история создания университета</h2>
-                <p>ВПУ владеет наибольшим научно-исследовательским потенциалом в сфере машиностроения  в Польше. Огромная библиотека и компьютеризированная информационная база облегчает получение необходимых знаний и проведение научно-исследовательских работ, а широкий спектр актуальных специализаций дает возможность студентам университета соответствовать высоким требованиям современного рынка труда.
-  </p>
-                <p>В ВПУ есть много студенческих организаций, объединенных различными научными интересами – студенты работают над различными проектами в сфере энергетики, ИТ, инженерии и.т.д., совместно с государственными научными центрами.
-  <b>ВПУ – первый польский университет, представленный в Европейском центре космических исследований и технологий, космического агентства ESA в Нидерландах.
-  </b></p>
-                <p>При университете есть языковой центр SJO, где студенты могут улучшить свои знания иностранных языков и сдать экзамен для получения языкового сертификата.</p>
-                <h3 class="title-border-left">политехнический университет сегодня</h2>
-                <p>Есть в Политехнике и <b>Центр трудоустройства и карьеры</b>, который сотрудничает с крупными польскими и международными компаниями: Systems Polska SA, A & A People Personeelsdiensten BV,  AB Foods Polska Sp. z oo, AB INDUSTRY SA, ACNielsen Polska, Bank BPH, Grupa GE Capital, Beza Projekt sc и другие. Центр организует встречи с потенциальными работодателями и ежемесячно предлагает вакансии для студентов и віпускников по трудоустройству.</p>
-                <p>В <b>Варшавском политехническом университете</b> студенты могут заниматься своими любимыми видами спорта – плаваньем, аэробикой, футболом, баскетболом, теннисом, аэробикой в хорошо оборудованных спортивных залах. Есть собственный медицинский центр, где каждый студент в случае необходимости может получить бесплатно квалифицированную медицинскую помощь.</p>
-              </div>
-
-              <div class="tabs-box">
-                <p>Содержание первой вкладки...</p>
-              </div>
-
-              <div class="tabs-box">
-                <p>Содержание первой вкладки...</p>
-              </div>
-
-              <div class="tabs-box">
-                <p>Содержание первой вкладки...</p>
-              </div>
-
-              <div class="tabs-box">
-                <span class="tabs-box__title">Вступительный взнос —  200 евро</span>
-                <table class="tabs-box__table">
-                  <thead>
-                    <tr class="tabs-box__row">
-                      <th class="tabs-box__cell">Факультет</th>
-                      <th class="tabs-box__cell">специальность</th>
-                      <th class="tabs-box__cell">euro/год</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr class="tabs-box__row">
-                      <td class="tabs-box__cell">Экономика</td>
-                      <td class="tabs-box__cell">Economics and Organization of Enterprises</td>
-                      <td class="tabs-box__cell">2200</td>
-                    </tr>
-                    <tr class="tabs-box__row">
-                      <td class="tabs-box__cell">Veterinary Medicine</td>
-                      <td class="tabs-box__cell">Veterinar</td>
-                      <td class="tabs-box__cell">7600</td>
-                    </tr>
-                    <tr class="tabs-box__row">
-                      <td class="tabs-box__cell">Лесное хозяйство</td>
-                      <td class="tabs-box__cell">Forest Information Technology</td>
-                      <td class="tabs-box__cell">2200</td>
-                    </tr>
-                    <tr class="tabs-box__row">
-                      <td class="tabs-box__cell">Питание человека</td>
-                      <td class="tabs-box__cell">Organic Food Quality and Marketing*
-                      </td>
-                      <td class="tabs-box__cell">2200</td>
-                    </tr>
-                    <tr class="tabs-box__row">
-                      <td class="tabs-box__cell">Строительство и инженерная экология
-                      </td>
-                      <td class="tabs-box__cell">Restoration and Management of Environment</td>
-                      <td class="tabs-box__cell">2200</td>
-                    </tr>
-                    <tr class="tabs-box__row">
-                      <td class="tabs-box__cell">Информатика и математика</td>
-                      <td class="tabs-box__cell">Information Systems in Water Resources Management</td>
-                      <td class="tabs-box__cell">2200</td>
-                    </tr>
-                  </tbody>
-                </table>
-  <p class="tabs-box__text">*Обучение в Польше от STUDIX.EU , высшее образование в Польше от STUDIX.EU — самые выгодные условия поступления, самые актуальные Обучение в Польше от STUDIX.EU , высшее образование в Польше от STUDIX.EUновости, самые лучшие предложения специально для Вас!</p>
-              </div>
-
-
-              <div class="tabs-box  tabs-box--visible">
-                <a data-fancybox="gallery" href="assets/img/table-1.jpg" class="table-body__picture"><img src="assets/img/table-1.jpg"></a>
-                <a data-fancybox="gallery" href="assets/img/table-2.jpg" class="table-body__picture"><img src="assets/img/table-2.jpg"></a>
-                <a data-fancybox="gallery" href="assets/img/table-3.jpg" class="table-body__picture"><img src="assets/img/table-3.jpg"></a>
-                <a data-fancybox="gallery" href="assets/img/table-4.jpg" class="table-body__picture"><img src="assets/img/table-4.jpg"></a>
-                <a data-fancybox="gallery" href="assets/img/table-1.jpg" class="table-body__picture"><img src="assets/img/table-1.jpg"></a>
-                <a data-fancybox="gallery" href="assets/img/table-2.jpg" class="table-body__picture"><img src="assets/img/table-2.jpg"></a>
-                <a data-fancybox="gallery" href="assets/img/table-3.jpg" class="table-body__picture"><img src="assets/img/table-3.jpg"></a>
-                <a data-fancybox="gallery" href="assets/img/table-4.jpg" class="table-body__picture"><img src="assets/img/table-4.jpg"></a>
-                <a data-fancybox="gallery" href="assets/img/table-1.jpg" class="table-body__picture"><img src="assets/img/table-1.jpg"></a>
-                <a data-fancybox="gallery" href="assets/img/table-2.jpg" class="table-body__picture"><img src="assets/img/table-2.jpg"></a>
-                <a data-fancybox="gallery" href="assets/img/table-3.jpg" class="table-body__picture"><img src="assets/img/table-3.jpg"></a>
-                <a data-fancybox="gallery" href="assets/img/table-4.jpg" class="table-body__picture"><img src="assets/img/table-4.jpg"></a>
-                <a data-fancybox="gallery" href="assets/img/table-1.jpg" class="table-body__picture"><img src="assets/img/table-1.jpg"></a>
-                <a data-fancybox="gallery" href="assets/img/table-2.jpg" class="table-body__picture"><img src="assets/img/table-2.jpg"></a>
-                <a data-fancybox="gallery" href="assets/img/table-3.jpg" class="table-body__picture"><img src="assets/img/table-3.jpg"></a>
-              </div>
-
-          </div>
-        </section>
-
-        <div class="third-main">
-
-          <div class="interesting">
-            <span class="consultation__quote">Интересное</span>
-            <ul class="interesting__list">
-              <li class="interesting__item"><a href="" class="interesting__link">Обучение в Польше</a></li>
-              <li class="interesting__item"><a href="" class="interesting__link">Образование в Польше</a></li>
-              <li class="interesting__item"><a href="" class="interesting__link">Университеты Польши</a></li>
-              <li class="interesting__item"><a href="" class="interesting__link">Вузы Польши</a></li>
-              <li class="interesting__item"><a href="" class="interesting__link">Зерувка</a></li>
-              <li class="interesting__item"><a href="" class="interesting__link">Бесплатное обучение в Польше</a></li>
-              <li class="interesting__item"><a href="" class="interesting__link">Карта Поляка</a></li>
-              <li class="interesting__item"><a href="" class="interesting__link">Присяжные переводы</a></li>
-              <li class="interesting__item"><a href="" class="interesting__link">Среднее образование в Польше</a></li>
-              <li class="interesting__item"><a href="" class="interesting__link">Техникумы Польши</a></li>
-              <li class="interesting__item"><a href="" class="interesting__link">Лицеи Польши</a></li>
-              <li class="interesting__item"><a href="" class="interesting__link">Языковые лагеря в Польше</a></li>
-            </ul>
-          </div>
-
-
-          <div class="social-group">
-
-            <span class="consultation__quote">Ждем вас в гости</span>
-
-            <div class="social-inner">
-              <div class="social-group__item  social-group__vk"></div>
-              <div class="social-group__item  social-group__fb"></div>
-            </div>
-
-            </div>
-
-          <div class="social-group social-2">
-            <div class="social-group__item  social-group__tw"></div>
-            <div class="social-group__item  social-group__inst"></div>
-          </div>
-
-        </div>
-      </main>
-
-
-    </div>
-  </div>
-
-  <footer class="page-footer">
-    <div class="container">
-      <div class="footer__flex-inner">
-
-        <div class="footer-countries">
-          <div class="countries  coutries-poland">
-            <p class="countries-title">Польша</p>
-            <ul class="footer-countries__list">
-              <li class="footer-countries__item"><a href="#" class="footer-countries__link">Обучение в Польше</a></li>
-              <li class="footer-countries__item"><a href="#" class="footer-countries__link">Образование в Польше</a></li>
-              <li class="footer-countries__item"><a href="#" class="footer-countries__link">Университеты Польши</a></li>
-              <li class="footer-countries__item"><a href="#" class="footer-countries__link">Вузы Польши</a></li>
-              <li class="footer-countries__item"><a href="#" class="footer-countries__link">Зерувка</a></li>
-              <li class="footer-countries__item"><a href="#" class="footer-countries__link">Бесплатное обучение в Польше</a></li>
-              <li class="footer-countries__item"><a href="#" class="footer-countries__link">Карта Поляка</a></li>
-              <li class="footer-countries__item"><a href="#" class="footer-countries__link">Присяжные переводы</a></li>
-              <li class="footer-countries__item"><a href="#" class="footer-countries__link">Среднее образование в Польше</a></li>
-              <li class="footer-countries__item"><a href="#" class="footer-countries__link">Техникумы Польши</a></li>
-              <li class="footer-countries__item"><a href="#" class="footer-countries__link">Лицеи Польши</a></li>
-              <li class="footer-countries__item"><a href="#" class="footer-countries__link">Языковые лагеря в Польше</a></li>
-            </ul>
-          </div>
-          <div class="coutries  coutries-czech">
-            <p class="countries-title">Чехия</p>
-            <ul class="footer-countries__list">
-              <li class="footer-countries__item"><a href="#" class="footer-countries__link">Обучение в Чехии</a></li>
-              <li class="footer-countries__item"><a href="#" class="footer-countries__link">Бесплатное обучение в Чехии</a></li>
-              <li class="footer-countries__item"><a href="#" class="footer-countries__link">Образование в Чехии</a></li>
-              <li class="footer-countries__item"><a href="#" class="footer-countries__link">Университеты Чехии</a></li>
-              <li class="footer-countries__item"><a href="#" class="footer-countries__link">Подготовительные курсы в Чехии</a></li>
-              <li class="footer-countries__item  footer-countries__item-padding"><a href="#" class="footer-countries__link">Врачи в Чехии</a></li>
-              <li class="footer-countries__item"><a href="#" class="footer-countries__link">Ознакомительные поездки</a></li>
-            </ul>
-          </div>
-          <div class="coutries  coutries-slovakia">
-            <p class="countries-title">Словакия</p>
-            <ul class="footer-countries__list">
-              <li class="footer-countries__item"><a href="#" class="footer-countries__link">Обучение в Словакии</a></li>
-              <li class="footer-countries__item"><a href="#" class="footer-countries__link">Образование в Словакии</a></li>
-              <li class="footer-countries__item"><a href="#" class="footer-countries__link">Бесплатное образование в Словакии</a></li>
-              <li class="footer-countries__item"><a href="#" class="footer-countries__link">Подготовительные курсы в Словакии</a></li>
-              <li class="footer-countries__item  footer-countries__item-padding"><a href="#" class="footer-countries__link">Университеты Словакии</a></li>
-            </ul>
-            <ul class="footer-countries__list">
-              <li class="footer-countries__item"><a href="#" class="footer-countries__link  footer-countries__link-city">Львов</a></li>
-              <li class="footer-countries__item"><a href="#" class="footer-countries__link  footer-countries__link-city">Киев</a></li>
-              <li class="footer-countries__item"><a href="#" class="footer-countries__link  footer-countries__link-city">Одесса</a></li>
-              <li class="footer-countries__item"><a href="#" class="footer-countries__link  footer-countries__link-city">Днепропетровськ</a></li>
-              <li class="footer-countries__item"><a href="#" class="footer-countries__link  footer-countries__link-city">Запорожье</a></li>
-              <li class="footer-countries__item"><a href="#" class="footer-countries__link  footer-countries__link-city">Варшава</a></li>
-              <li class="footer-countries__item"><a href="#" class="footer-countries__link  footer-countries__link-city">Краков</a></li>
-            </ul>
-          </div>
-          <div class="copyright">© 2012-2016, EuroEduGroup Studix.eu ®, <a class="copyright__link">Карта сайту</a> При використанні матеріалів сайту посилання на Studix.eu</div>
-        </div>
-
-        <div class="footer__contacts">
-
-          <div class="contacts">
-            <p class="contacts__title">Контакты</p>
-            <div class="contacts__container">
-              <p class="contacts__left">
-                <a href='tel:+380678657704' class="contacts__inf">+38 0678657704</a>
-                <a href='tel:+380678657704' class="contacts__inf">+38 0638346088</a>
-              </p>
-              <p class="contacts__right">
-                <a href='tel:+380678657704' class="contacts__inf">+38 0994529077</a><br>
-                <a href="skype:Studix.eu?add" class="contacts__inf  contacts__skype">Studix.eu</a>
-                <a href='mailto:studix.eu@gmail.com' class="mode__email">studix.eu@gmail.com</a>
-              </p>
-            </div>
-          </div>
-
-          <div class="mode">
-            <p class="mode__title">График работы</p>
-            <div class="mode__cantainer">
-              <span class="mode__time">Пн-Пт: 10:00-18:00</span>
-            </div>
-          </div>
-
-          <ul class="social">
-            <li class="social__item">
-              <a class="social__link  social__fb" href="#"></a>
-            </li>
-            <li class="social__item">
-              <a class="social__link  social__vk" href="#"></a>
-            </li>
-            <li class="social__item">
-              <a class="social__link  social__tw" href="#"></a>
-            </li>
-            <li class="social__item">
-              <a class="social__link  social__google" href="#"></a>
-            </li>
-            <li class="social__item">
-              <a class="social__link  social__inst" href="#"></a>
-            </li>
-            <li class="social__item">
-              <a class="social__link  social__youtube" href="#"></a>
-            </li>
-          </ul>
-
-          <div class="subscribe">
-            <p class="subscribe__title">подписка на новости</p>
-            <form class="subscribe__form" action="index.html" method="post">
-              <input type="text" id="subscribe__text" name="subscribe-email" placeholder="Введите ваш E-mail">
-              <input type="submit" value="ок" id="subscribe__submit" name="subscribe-submit">
-            </form>
-          </div>
-
-        </div>
-
-      </div>
-    </div>
-  </footer>
-
-
-  <script src="https://yastatic.net/jquery/3.1.1/jquery.min.js"></script>
-  <script src="assets/js/slick.min.js"></script>
-  <script src="assets/js/main.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js"></script>
+<header class="page-header">
+
+	<div class="top-header">
+		<div class="container">
+			<div class="top-header__flex-inner">
+				<div class="logo">
+					<a href="index.html" class="logo__link">
+						<picture>
+							<source media="(min-width:1200px)" srcset="assets/img/logo.png">
+							<img class="logo__picture" src="assets/img/logo-xs.png" alt="Stud!x">
+							<p class="logo__text">освіта за кордоном</p>
+						</picture>
+					</a>
+				</div>
+
+				<ul class="language">
+					<li class="language__item"><a class="language__link  language__ua">UA</a></li>
+					<li class="language__item"><a class="language__link  language__ru">RU</a></li>
+					<li class="language__item"><a class="language__link  language__en">EN</a></li>
+					<li class="language__item"><a class="language__link  language__pl">PL</a></li>
+				</ul>
+
+				<div class="contacts">
+					<p class="contacts__title">Контакты</p>
+					<div class="contacts__container">
+						<p class="contacts__left">
+							<a href='tel:+380678657704' class="contacts__inf">+38 0678657704</a>
+							<a href='tel:+380678657704' class="contacts__inf">+38 0638346088</a>
+						</p>
+						<p class="contacts__right">
+							<a href='tel:+380678657704' class="contacts__inf">+38 0994529077</a><br>
+							<a href="skype:Studix.eu?add" class="contacts__inf  contacts__skype">Studix.eu</a>
+						</p>
+					</div>
+				</div>
+
+				<div class="mode">
+					<p class="mode__title">График работы</p>
+					<div class="mode__cantainer">
+						<span class="mode__time">Пн-Пт: 10:00-18:00</span>
+						<a href='mailto:studix.eu@gmail.com' class="mode__email">studix.eu@gmail.com</a>
+					</div>
+				</div>
+
+				<ul class="social">
+					<li class="social__item">
+						<a class="social__link  social__fb" href="#"></a>
+					</li>
+					<li class="social__item">
+						<a class="social__link  social__vk" href="#"></a>
+					</li>
+					<li class="social__item">
+						<a class="social__link  social__tw" href="#"></a>
+					</li>
+					<li class="social__item">
+						<a class="social__link  social__google" href="#"></a>
+					</li>
+					<li class="social__item">
+						<a class="social__link  social__inst" href="#"></a>
+					</li>
+					<li class="social__item">
+						<a class="social__link  social__youtube" href="#"></a>
+					</li>
+				</ul>
+
+				<div class="toggle  toggle--closed">
+					<!-- toggle--closed toggle--opened-->
+					<button class="toggle-btn  toggle-btn--closed" type="button"></button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="menu">
+		<div class="container menu__container">
+			<div class="menu__flex-inner  menu__flex-inner--closed">
+
+				<ul class="menu__list">
+					<li class="menu__item"><a href="#" class="menu__link">еврошкола</a></li>
+					<li class="menu__item"><a href="#" class="menu__link">польша</a></li>
+					<li class="menu__item"><a href="#" class="menu__link">чехия</a></li>
+					<li class="menu__item"><a href="#" class="menu__link">словакия</a></li>
+					<li class="menu__item"><a href="#" class="menu__link">услуги</a></li>
+					<li class="menu__item"><a href="#" class="menu__link">карта поляка</a></li>
+					<li class="menu__item"><a href="#" class="menu__link  menu__link--active">контакты</a></li>
+				</ul>
+
+				<div class="search">
+					<ul class="search__list">
+						<li>
+							<form action="search-result" class="search__form">
+								<i class='search__icon'></i>
+								<input class="search__input" type="text" placeholder="поиск по сайту..."
+									   name="search-input">
+							</form>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="slider">
+		<div class="js-slider">
+
+			<div class="slider-item">
+				<img src="assets/img/slide-1.jpg" alt="" class="slider__picture">
+			</div>
+
+			<div class="slider-item">
+				<img src="assets/img/slide-2.jpg" alt="" class="slider__picture">
+			</div>
+
+			<div class="slider-item">
+				<img src="assets/img/slide-3.jpg" alt="" class="slider__picture">
+			</div>
+
+		</div>
+
+
+		<div class="container">
+			<div class="promo">
+
+				<div class="promo-inf">
+					<h1 class="promo-inf__title"><span>Лучшие</span> вузы Польши <br>с группой Studix!</h1>
+					<p class="promo-inf__text">
+						Университеты Польши с каждым годом становятся все популярнее среди наших студентов.<br> Как
+						выбрать именно «свой» университет?<br> Подойти к этому вопросу надо основательно,<br> ведь выбор
+						ВУЗа и специальности, это...
+					</p>
+					<a href="" class="promo-inf__btn">подробнее</a>
+				</div>
+
+				<div class="promo-connection">
+					<div class="promo-form">
+						<form action="search-result" class="search__form">
+							<h2 class="promo-form__title">запишитесь на собеседование</h2>
+							<input class="promo-form__input" type="text" placeholder="Ваше имя и фамилия"
+								   name="promo-input">
+							<input class="promo-form__input" type="text" placeholder="Ваш номер телефона"
+								   name="promo-input">
+							<input class="promo-frm__input" type="text" placeholder="Ваш e-mail" name="promo-input">
+							<button type="submit" class="promo-form__btn">отправить!</button>
+						</form>
+					</div>
+
+					<div class="promo-questionary">
+						<a href="" class="promo-questionary__btn">заполнить анкету</a>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+		<div class="slider__progress-bar"></div>
+
+	</div>
+
+</header>
+
+<div class="container">
+	<div class="flex-wrapper">
+
+		<aside class="main-aside">
+			<div class="aside__flex-inner">
+
+				<h2 class="aside__title">УНИВЕРСИТЕТЫ</h2>
+
+				<ul class="aside__list  aside__list-1">
+					<li class="aside__item"><a href="" class="aside__link  aside__link-title  aside__link-title-1">среднее
+						образование</a></li>
+					<li class="aside__item"><a href="" class="aside__link">Техникум в Ополе Любельском</a></li>
+					<li class="aside__item"><a href="" class="aside__link">Коллегиум св. Костки</a></li>
+					<li class="aside__item"><a href="" class="aside__link">Спортивная школа в Кракове</a></li>
+					<li class="aside__item"><a href="" class="aside__link">Техникум в Скале (Краков)</a></li>
+					<li class="aside__item"><a href="" class="aside__link">Рекламно-полиграфический техникум в
+						Кракове</a></li>
+					<li class="aside__item"><a href="" class="aside__link  aside__link-btn">ПОКАЗАТЬ ВСЕ</a></li>
+				</ul>
+
+				<ul class="aside__list  aside__list-2">
+					<li class="aside__item"><a href="" class="aside__link   aside__link-title  aside__link-title-2">ВАРШАВА</a>
+					</li>
+					<li class="aside__item"><a href="" class="aside__link">Варшавский университет</a></li>
+					<li class="aside__item"><a href="" class="aside__link">Варшавский Экономический Университет SGH</a>
+					</li>
+					<li class="aside__item"><a href="info.html" class="aside__link">Варшавская политехника</a></li>
+					<li class="aside__item"><a href="" class="aside__link">Варшавский сельскохозяйственный университет
+						SGGW</a></li>
+					<li class="aside__item"><a href="" class="aside__link">Академия им. Леона Козминского</a></li>
+					<li class="aside__item"><a href="" class="aside__link  aside__link-btn">ПОКАЗАТЬ ВСЕ</a></li>
+				</ul>
+
+				<ul class="aside__list  aside__list-3">
+					<li class="aside__item"><a href="" class="aside__link   aside__link-title  aside__link-title-3">КРАКОВ</a>
+					</li>
+					<li class="aside__item"><a href="" class="aside__link">Варшавский университет</a></li>
+					<li class="aside__item"><a href="" class="aside__link">Варшавский Экономический Университет SGH</a>
+					</li>
+					<li class="aside__item"><a href="" class="aside__link">Варшавская политехника</a></li>
+					<li class="aside__item"><a href="" class="aside__link">Варшавский сельскохозяйственный университет
+						SGGW</a></li>
+					<li class="aside__item"><a href="" class="aside__link">Академия им. Леона Козминского</a></li>
+					<li class="aside__item"><a href="" class="aside__link  aside__link-btn">ПОКАЗАТЬ ВСЕ</a></li>
+				</ul>
+
+				<ul class="aside__list  aside__list-4">
+					<li class="aside__item"><a href="" class="aside__link  aside__link-title  aside__link-title-4">КАТОВИЦЕ</a>
+					</li>
+					<li class="aside__item"><a href="" class="aside__link">Варшавский университет</a></li>
+					<li class="aside__item"><a href="" class="aside__link">Варшавский Экономический Университет SGH</a>
+					</li>
+					<li class="aside__item"><a href="" class="aside__link">Варшавская политехника</a></li>
+					<li class="aside__item"><a href="" class="aside__link">Варшавский сельскохозяйственный университет
+						SGGW</a></li>
+					<li class="aside__item"><a href="" class="aside__link">Академия им. Леона Козминского</a></li>
+					<li class="aside__item"><a href="" class="aside__link  aside__link-btn">ПОКАЗАТЬ ВСЕ</a></li>
+				</ul>
+
+				<ul class="aside__list  aside__list-1">
+					<li class="aside__item"><a href="" class="aside__link  aside__link-title  aside__link-title-1">СРЕДНЕЕ
+						ОБРАЗОВАНИЕ</a></li>
+					<li class="aside__item"><a href="" class="aside__link">Техникум в Ополе Любельском</a></li>
+					<li class="aside__item"><a href="" class="aside__link">Коллегиум св. Костки</a></li>
+					<li class="aside__item"><a href="" class="aside__link">Спортивная школа в Кракове</a></li>
+					<li class="aside__item"><a href="" class="aside__link">Техникум в Скале (Краков)</a></li>
+					<li class="aside__item"><a href="" class="aside__link">Рекламно-полиграфический техникум в
+						Кракове</a></li>
+					<li class="aside__item"><a href="" class="aside__link  aside__link-btn">ПОКАЗАТЬ ВСЕ</a></li>
+				</ul>
+
+				<ul class="aside__list  aside__list-2">
+					<li class="aside__item"><a href="" class="aside__link  aside__link-title  aside__link-title-2">Варшава</a>
+					</li>
+					<li class="aside__item"><a href="" class="aside__link">Варшавский университет</a></li>
+					<li class="aside__item"><a href="" class="aside__link">Варшавский Экономический Университет SGH</a>
+					</li>
+					<li class="aside__item"><a href="" class="aside__link">Варшавская политехника</a></li>
+					<li class="aside__item"><a href="" class="aside__link">Варшавский сельскохозяйственный университет
+						SGGW</a></li>
+					<li class="aside__item"><a href="" class="aside__link">Академия им. Леона Козминского</a></li>
+					<li class="aside__item"><a href="" class="aside__link  aside__link-btn">ПОКАЗАТЬ ВСЕ</a></li>
+				</ul>
+
+				<ul class="aside__list  aside__list-3">
+					<li class="aside__item"><a href="" class="aside__link  aside__link-title  aside__link-title-3">КРАКОВ</a>
+					</li>
+					<li class="aside__item"><a href="" class="aside__link">Варшавский университет</a></li>
+					<li class="aside__item"><a href="" class="aside__link">Варшавский Экономический Университет SGH</a>
+					</li>
+					<li class="aside__item"><a href="" class="aside__link">Варшавская политехника</a></li>
+					<li class="aside__item"><a href="" class="aside__link">Варшавский сельскохозяйственный университет
+						SGGW</a></li>
+					<li class="aside__item"><a href="" class="aside__link">Академия им. Леона Козминского</a></li>
+					<li class="aside__item"><a href="" class="aside__link  aside__link-btn">ПОКАЗАТЬ ВСЕ</a></li>
+				</ul>
+
+				<ul class="aside__list  aside__list-4">
+					<li class="aside__item"><a href="" class="aside__link  aside__link-title  aside__link-title-4">КАТОВИЦЕ</a>
+					</li>
+					<li class="aside__item"><a href="" class="aside__link">Варшавский университет</a></li>
+					<li class="aside__item"><a href="" class="aside__link">Варшавский Экономический Университет SGH</a>
+					</li>
+					<li class="aside__item"><a href="" class="aside__link">Варшавская политехника</a></li>
+					<li class="aside__item"><a href="" class="aside__link">Варшавский сельскохозяйственный университет
+						SGGW</a></li>
+					<li class="aside__item"><a href="" class="aside__link">Академия им. Леона Козминского</a></li>
+					<li class="aside__item"><a href="" class="aside__link  aside__link-btn">ПОКАЗАТЬ ВСЕ</a></li>
+				</ul>
+
+			</div>
+		</aside>
+
+		<main>
+
+			<div class="breadcrumbs">
+				<ul class="breadcrumbs__list">
+					<li class="breadcrumbs__item"><a href="index.html" class="breadcrumbs__link">Studix - Стадикс /</a>
+					</li>
+					<li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Университеты / </a></li>
+					<li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">ВАРШАВА / </a></li>
+					<li class="breadcrumbs__item"><a class="breadcrumbs__link breadcrumbs__link--active">Варшавская
+						политехника</a></li>
+				</ul>
+			</div>
+
+			<section class="university">
+
+				<div class="university__top">
+					<div class="university__img">
+						<img src="assets/img/university.png" alt="" class="university__picture">
+					</div>
+
+					<div class="university__description">
+						<h2 class="university__title">Варшавский политехнический университет<br>Warszawska Politechnika
+						</h2>
+						<a href="https://goo.gl/maps/z2BZ7CWSd362" class="university__address contacts-page__street">Plac
+							Politechniki 1, 00-661 Warszawa</a>
+						<a href="www.pw.edu.pl" class="university__web">www.pw.edu.pl</a>
+						<p class="university__desription"><span>Государственный Варшавский политехнический университет (ВПУ)</span>
+							– один из крупнейших и престижнейших технических ВУЗов Польши и Восточной Европы. Абсолютный
+							«чемпион» всех технических рейтингов, рейтингов приоритетов работодателей,
+							рейтингов руководителей и зароботков.</p>
+					</div>
+				</div>
+
+				<div class="university__center">
+					<p class="university__text">Хорошая новость – студенты из стран, которые не входят в состав ЕС –
+						Украина, Белоруссия, Россия, Молдова, Казахстан итд, имеют возможность получить высшее
+						образование в Европе и учиться в Варшавском политехническом университете бесплатно!
+						Ежегодно выделяется определенное количество мест на различные специальности, куда иностранные
+						студенты могут поступить на конкурсной основе и обучаться бесплатно в Польше на степень
+						бакалавра или магистра. Язык обучения – польский.</p>
+					<p class="university__text  university__text-2">Владельцы Карты Поляка могут учиться бесплатно
+						(стационар на польском языке) и принимать участие в стипендиальних программах (социальная,
+						зависит от уровня доходов в семье, научная — по результатам сессии, за спортивные достижения и
+						т.п.)
+						Документально подтвержденное польское происхождение гарантирует 30 % скидки на оплату
+						обучения.</p>
+				</div>
+
+				<div class="tabs">
+					<ul class="tabs-books__list">
+						<li class="tabs-books__item"><a class="tabs-books__link">Инфо</a></li>
+						<li class="tabs-books__item"><a class="tabs-books__link">бесплатно</a></li>
+						<li class="tabs-books__item"><a class="tabs-books__link">бакалавр</a></li>
+						<li class="tabs-books__item"><a class="tabs-books__link">магистр</a></li>
+						<li class="tabs-books__item"><a class="tabs-books__link">english</a></li>
+						<li class="tabs-books__item"><a class="tabs-books__link">фото/видео</a></li>
+					</ul>
+
+					<div class="tabs-inner">
+						<div class="tabs-box tabs-box__info">
+							<p><span>Политехническим университетом</span> ВУЗ стал называться в 1915 году, продолжая
+								учебные традиции Технологического института, созданного в Варшаве в 1826 году польскому
+								благодаря ученому, философу и меценату Станиславу Сташицу. ВПУ
+								занимает ведущие позиции в рейтингах учебных заведений Польши, благодаря высоким
+								стандартам обучения в Варшавской политехнике, фундаментальной научно-технической базе и
+								высококвалифицированному педагогическому составу. <b>Обучение проходит на польском и
+									английском
+									языках.</b></p>
+							<p>В университете обучается более 30 000 студентов из разных стран и ежегодно выпускается
+								около 5 000 высококлассных специалистов. Согласно статистике, <span>каждый 9-ый руководитель
+									или топ-менеджер крупной компании – выпускник Варшавской Политехники.</span>
+							</p>
+							<p>В университете 17 факультетов,. 16 из них находятся в столице Польской Республики, а один
+								– в Плоцке. При ВПУ есть 8 исследовательских центров, с которыми сотрудничают
+								Национальный центр развития и исследований, Министерство образования
+								Польши, Национальный центр науки, проводятся совместные конференции и встречи, с
+								участием известных ученых.
+							</p>
+							<p>При <b>Варшавском политехническом университете</b> действую международные программы по
+								обмену студентами, ВУЗы-партнеры предоставляют учащимся ВПУ продолжать обучение,
+								участвовать в международных конференциях или совместных научных проектах
+								во многих странах мира: США, Канаде, Австралии, Китае, Японии, Великобритании, Австрии,
+								Германии, Италии, Дании, Франции, Египта, Финляндии.</p>
+							<h3 class="title-border-left">история создания университета</h3>
+							<p>ВПУ владеет наибольшим научно-исследовательским потенциалом в сфере машиностроения в
+								Польше. Огромная библиотека и компьютеризированная информационная база облегчает
+								получение необходимых знаний и проведение научно-исследовательских работ, а широкий
+								спектр актуальных специализаций дает возможность студентам университета
+								соответствовать высоким требованиям современного рынка труда.
+							</p>
+							<p>В ВПУ есть много студенческих организаций, объединенных различными научными
+								интересами – студенты работают над различными проектами в сфере энергетики, ИТ,
+								инженерии и.т.д., совместно с государственными научными центрами.
+								<b>ВПУ – первый польский университет, представленный в Европейском центре
+									космических исследований и технологий, космического агентства ESA в Нидерландах.
+								</b></p>
+							<p>При университете есть языковой центр SJO, где студенты могут улучшить свои знания
+								иностранных языков и сдать экзамен для получения языкового сертификата.</p>
+							<h3 class="title-border-left">политехнический университет сегодня</h3>
+							<p>Есть в Политехнике и <b>Центр трудоустройства и карьеры</b>, который сотрудничает
+								с крупными польскими и международными компаниями: Systems Polska SA, A & A
+								People Personeelsdiensten BV, AB Foods Polska Sp. z oo, AB INDUSTRY SA,
+								ACNielsen Polska, Bank BPH, Grupa GE Capital, Beza Projekt sc и другие. Центр
+								организует встречи с потенциальными работодателями и ежемесячно предлагает
+								вакансии для студентов и віпускников по трудоустройству.</p>
+							<p>В <b>Варшавском политехническом университете</b> студенты могут заниматься своими
+								любимыми видами спорта – плаваньем, аэробикой, футболом, баскетболом, теннисом,
+								аэробикой в хорошо оборудованных спортивных залах. Есть собственный медицинский
+								центр, где каждый студент в случае необходимости может получить бесплатно
+								квалифицированную медицинскую помощь.</p>
+						</div>
+
+						<div class="tabs-box">
+							<p>Содержание первой вкладки...</p>
+						</div>
+
+						<div class="tabs-box">
+							<p>Содержание первой вкладки...</p>
+						</div>
+
+						<div class="tabs-box">
+							<p>Содержание первой вкладки...</p>
+						</div>
+
+						<div class="tabs-box">
+							<span class="tabs-box__title">Вступительный взнос —  200 евро</span>
+							<table class="tabs-box__table">
+								<thead>
+								<tr class="tabs-box__row">
+									<th class="tabs-box__cell">Факультет</th>
+									<th class="tabs-box__cell">специальность</th>
+									<th class="tabs-box__cell">euro/год</th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr class="tabs-box__row">
+									<td class="tabs-box__cell">Экономика</td>
+									<td class="tabs-box__cell">Economics and Organization of Enterprises</td>
+									<td class="tabs-box__cell">2200</td>
+								</tr>
+								<tr class="tabs-box__row">
+									<td class="tabs-box__cell">Veterinary Medicine</td>
+									<td class="tabs-box__cell">Veterinar</td>
+									<td class="tabs-box__cell">7600</td>
+								</tr>
+								<tr class="tabs-box__row">
+									<td class="tabs-box__cell">Лесное хозяйство</td>
+									<td class="tabs-box__cell">Forest Information Technology</td>
+									<td class="tabs-box__cell">2200</td>
+								</tr>
+								<tr class="tabs-box__row">
+									<td class="tabs-box__cell">Питание человека</td>
+									<td class="tabs-box__cell">Organic Food Quality and Marketing*
+									</td>
+									<td class="tabs-box__cell">2200</td>
+								</tr>
+								<tr class="tabs-box__row">
+									<td class="tabs-box__cell">Строительство и инженерная экология
+									</td>
+									<td class="tabs-box__cell">Restoration and Management of Environment</td>
+									<td class="tabs-box__cell">2200</td>
+								</tr>
+								<tr class="tabs-box__row">
+									<td class="tabs-box__cell">Информатика и математика</td>
+									<td class="tabs-box__cell">Information Systems in Water Resources Management</td>
+									<td class="tabs-box__cell">2200</td>
+								</tr>
+								</tbody>
+							</table>
+							<p class="tabs-box__text">*Обучение в Польше от STUDIX.EU , высшее образование в Польше от
+								STUDIX.EU — самые выгодные условия поступления, самые актуальные Обучение в Польше от
+								STUDIX.EU , высшее образование в Польше от STUDIX.EUновости, самые лучшие предложения
+								специально для Вас!</p>
+						</div>
+
+						<div class="tabs-box">
+							<a data-fancybox="gallery" href="assets/img/table-1.jpg" class="table-body__picture"><img
+									src="assets/img/table-1.jpg"></a>
+							<a data-fancybox="gallery" href="assets/img/table-2.jpg" class="table-body__picture"><img
+									src="assets/img/table-2.jpg"></a>
+							<a data-fancybox="gallery" href="assets/img/table-3.jpg" class="table-body__picture"><img
+									src="assets/img/table-3.jpg"></a>
+							<a data-fancybox="gallery" href="assets/img/table-4.jpg" class="table-body__picture"><img
+									src="assets/img/table-4.jpg"></a>
+							<a data-fancybox="gallery" href="assets/img/table-1.jpg" class="table-body__picture"><img
+									src="assets/img/table-1.jpg"></a>
+							<a data-fancybox="gallery" href="assets/img/table-2.jpg" class="table-body__picture"><img
+									src="assets/img/table-2.jpg"></a>
+							<a data-fancybox="gallery" href="assets/img/table-3.jpg" class="table-body__picture"><img
+									src="assets/img/table-3.jpg"></a>
+							<a data-fancybox="gallery" href="assets/img/table-4.jpg" class="table-body__picture"><img
+									src="assets/img/table-4.jpg"></a>
+							<a data-fancybox="gallery" href="assets/img/table-1.jpg" class="table-body__picture"><img
+									src="assets/img/table-1.jpg"></a>
+							<a data-fancybox="gallery" href="assets/img/table-2.jpg" class="table-body__picture"><img
+									src="assets/img/table-2.jpg"></a>
+							<a data-fancybox="gallery" href="assets/img/table-3.jpg" class="table-body__picture"><img
+									src="assets/img/table-3.jpg"></a>
+							<a data-fancybox="gallery" href="assets/img/table-4.jpg" class="table-body__picture"><img
+									src="assets/img/table-4.jpg"></a>
+							<a data-fancybox="gallery" href="assets/img/table-1.jpg" class="table-body__picture"><img
+									src="assets/img/table-1.jpg"></a>
+							<a data-fancybox="gallery" href="assets/img/table-2.jpg" class="table-body__picture"><img
+									src="assets/img/table-2.jpg"></a>
+							<a data-fancybox="gallery" href="assets/img/table-3.jpg" class="table-body__picture"><img
+									src="assets/img/table-3.jpg"></a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<div class="third-main">
+
+				<div class="interesting">
+					<span class="consultation__quote">Интересное</span>
+					<ul class="interesting__list">
+						<li class="interesting__item"><a href="" class="interesting__link">Обучение в Польше</a></li>
+						<li class="interesting__item"><a href="" class="interesting__link">Образование в Польше</a></li>
+						<li class="interesting__item"><a href="" class="interesting__link">Университеты Польши</a></li>
+						<li class="interesting__item"><a href="" class="interesting__link">Вузы Польши</a></li>
+						<li class="interesting__item"><a href="" class="interesting__link">Зерувка</a></li>
+						<li class="interesting__item"><a href="" class="interesting__link">Бесплатное обучение в
+							Польше</a></li>
+						<li class="interesting__item"><a href="" class="interesting__link">Карта Поляка</a></li>
+						<li class="interesting__item"><a href="" class="interesting__link">Присяжные переводы</a></li>
+						<li class="interesting__item"><a href="" class="interesting__link">Среднее образование в
+							Польше</a></li>
+						<li class="interesting__item"><a href="" class="interesting__link">Техникумы Польши</a></li>
+						<li class="interesting__item"><a href="" class="interesting__link">Лицеи Польши</a></li>
+						<li class="interesting__item"><a href="" class="interesting__link">Языковые лагеря в Польше</a>
+						</li>
+					</ul>
+				</div>
+
+
+				<div class="social-group">
+
+					<span class="consultation__quote">Ждем вас в гости</span>
+
+					<div class="social-inner">
+						<div class="social-group__item  social-group__vk"></div>
+						<div class="social-group__item  social-group__fb"></div>
+					</div>
+
+				</div>
+
+				<div class="social-group social-2">
+					<div class="social-group__item  social-group__tw"></div>
+					<div class="social-group__item  social-group__inst"></div>
+				</div>
+
+			</div>
+		</main>
+
+
+	</div>
+</div>
+
+<footer class="page-footer">
+	<div class="container">
+		<div class="footer__flex-inner">
+
+			<div class="footer-countries">
+				<div class="countries  coutries-poland">
+					<p class="countries-title">Польша</p>
+					<ul class="footer-countries__list">
+						<li class="footer-countries__item"><a href="#" class="footer-countries__link">Обучение в
+							Польше</a></li>
+						<li class="footer-countries__item"><a href="#" class="footer-countries__link">Образование в
+							Польше</a></li>
+						<li class="footer-countries__item"><a href="#" class="footer-countries__link">Университеты
+							Польши</a></li>
+						<li class="footer-countries__item"><a href="#" class="footer-countries__link">Вузы Польши</a>
+						</li>
+						<li class="footer-countries__item"><a href="#" class="footer-countries__link">Зерувка</a></li>
+						<li class="footer-countries__item"><a href="#" class="footer-countries__link">Бесплатное
+							обучение в Польше</a></li>
+						<li class="footer-countries__item"><a href="#" class="footer-countries__link">Карта Поляка</a>
+						</li>
+						<li class="footer-countries__item"><a href="#" class="footer-countries__link">Присяжные
+							переводы</a></li>
+						<li class="footer-countries__item"><a href="#" class="footer-countries__link">Среднее
+							образование в Польше</a></li>
+						<li class="footer-countries__item"><a href="#" class="footer-countries__link">Техникумы
+							Польши</a></li>
+						<li class="footer-countries__item"><a href="#" class="footer-countries__link">Лицеи Польши</a>
+						</li>
+						<li class="footer-countries__item"><a href="#" class="footer-countries__link">Языковые лагеря в
+							Польше</a></li>
+					</ul>
+				</div>
+				<div class="coutries  coutries-czech">
+					<p class="countries-title">Чехия</p>
+					<ul class="footer-countries__list">
+						<li class="footer-countries__item"><a href="#" class="footer-countries__link">Обучение в
+							Чехии</a></li>
+						<li class="footer-countries__item"><a href="#" class="footer-countries__link">Бесплатное
+							обучение в Чехии</a></li>
+						<li class="footer-countries__item"><a href="#" class="footer-countries__link">Образование в
+							Чехии</a></li>
+						<li class="footer-countries__item"><a href="#" class="footer-countries__link">Университеты
+							Чехии</a></li>
+						<li class="footer-countries__item"><a href="#" class="footer-countries__link">Подготовительные
+							курсы в Чехии</a></li>
+						<li class="footer-countries__item  footer-countries__item-padding"><a href="#"
+																							  class="footer-countries__link">Врачи
+							в Чехии</a></li>
+						<li class="footer-countries__item"><a href="#" class="footer-countries__link">Ознакомительные
+							поездки</a></li>
+					</ul>
+				</div>
+				<div class="coutries  coutries-slovakia">
+					<p class="countries-title">Словакия</p>
+					<ul class="footer-countries__list">
+						<li class="footer-countries__item"><a href="#" class="footer-countries__link">Обучение в
+							Словакии</a></li>
+						<li class="footer-countries__item"><a href="#" class="footer-countries__link">Образование в
+							Словакии</a></li>
+						<li class="footer-countries__item"><a href="#" class="footer-countries__link">Бесплатное
+							образование в Словакии</a></li>
+						<li class="footer-countries__item"><a href="#" class="footer-countries__link">Подготовительные
+							курсы в Словакии</a></li>
+						<li class="footer-countries__item  footer-countries__item-padding"><a href="#"
+																							  class="footer-countries__link">Университеты
+							Словакии</a></li>
+					</ul>
+					<ul class="footer-countries__list">
+						<li class="footer-countries__item"><a href="#"
+															  class="footer-countries__link  footer-countries__link-city">Львов</a>
+						</li>
+						<li class="footer-countries__item"><a href="#"
+															  class="footer-countries__link  footer-countries__link-city">Киев</a>
+						</li>
+						<li class="footer-countries__item"><a href="#"
+															  class="footer-countries__link  footer-countries__link-city">Одесса</a>
+						</li>
+						<li class="footer-countries__item"><a href="#"
+															  class="footer-countries__link  footer-countries__link-city">Днепропетровськ</a>
+						</li>
+						<li class="footer-countries__item"><a href="#"
+															  class="footer-countries__link  footer-countries__link-city">Запорожье</a>
+						</li>
+						<li class="footer-countries__item"><a href="#"
+															  class="footer-countries__link  footer-countries__link-city">Варшава</a>
+						</li>
+						<li class="footer-countries__item"><a href="#"
+															  class="footer-countries__link  footer-countries__link-city">Краков</a>
+						</li>
+					</ul>
+				</div>
+				<div class="copyright">© 2012-2016, EuroEduGroup Studix.eu ®, <a class="copyright__link">Карта сайту</a>
+					При використанні матеріалів сайту посилання на Studix.eu
+				</div>
+			</div>
+
+			<div class="footer__contacts">
+
+				<div class="contacts">
+					<p class="contacts__title">Контакты</p>
+					<div class="contacts__container">
+						<p class="contacts__left">
+							<a href='tel:+380678657704' class="contacts__inf">+38 0678657704</a>
+							<a href='tel:+380678657704' class="contacts__inf">+38 0638346088</a>
+						</p>
+						<p class="contacts__right">
+							<a href='tel:+380678657704' class="contacts__inf">+38 0994529077</a><br>
+							<a href="skype:Studix.eu?add" class="contacts__inf  contacts__skype">Studix.eu</a>
+							<a href='mailto:studix.eu@gmail.com' class="mode__email">studix.eu@gmail.com</a>
+						</p>
+					</div>
+				</div>
+
+				<div class="mode">
+					<p class="mode__title">График работы</p>
+					<div class="mode__cantainer">
+						<span class="mode__time">Пн-Пт: 10:00-18:00</span>
+					</div>
+				</div>
+
+				<ul class="social">
+					<li class="social__item">
+						<a class="social__link  social__fb" href="#"></a>
+					</li>
+					<li class="social__item">
+						<a class="social__link  social__vk" href="#"></a>
+					</li>
+					<li class="social__item">
+						<a class="social__link  social__tw" href="#"></a>
+					</li>
+					<li class="social__item">
+						<a class="social__link  social__google" href="#"></a>
+					</li>
+					<li class="social__item">
+						<a class="social__link  social__inst" href="#"></a>
+					</li>
+					<li class="social__item">
+						<a class="social__link  social__youtube" href="#"></a>
+					</li>
+				</ul>
+
+				<div class="subscribe">
+					<p class="subscribe__title">подписка на новости</p>
+					<form class="subscribe__form" action="index.html" method="post">
+						<input type="text" id="subscribe__text" name="subscribe-email" placeholder="Введите ваш E-mail">
+						<input type="submit" value="ок" id="subscribe__submit" name="subscribe-submit">
+					</form>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+</footer>
+
+
+<script src="https://yastatic.net/jquery/3.1.1/jquery.min.js"></script>
+<script src="assets/js/slick.min.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js"></script>
 
 </body>
 

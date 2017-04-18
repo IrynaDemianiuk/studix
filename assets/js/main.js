@@ -59,29 +59,22 @@ const front = {
         }
 
     },
-    fadeIn:function (el,display) {
-        el.style.opacity = 1;
-        el.style.display = display || "block";
-
-        (function fade() {
-            let val = parseFloat(el.style.opacity);
-            if (!((val += .1) > 1)) {
-                el.style.opacity = val;
-                requestAnimationFrame(fade);
-            }
-        })();
-    },
-    fadeOut:function (el) {
+    fadeIn:function (el, time , display) {
         el.style.opacity = 0;
+        el.style.display = display || "block";
+        time = time || 500;
 
-        (function fade() {
-            if ((el.style.opacity -= .1) < 0) {
-                el.style.display = "none";
-            } else {
-                requestAnimationFrame(fade);
-            }
+        let stepTime =  time/100;
+
+        (function fadeIna(){
+            let opacity = parseFloat(el.style.opacity);
+            if (opacity == 1) return;
+            el.style.opacity = opacity + 0.1;
+            setTimeout(fadeIna, stepTime);
         })();
     },
+
+
     // classic Tabs
     // link - елемент яким переключатимеш таби !Важливо щоб були всі в одному блоці!
     // сontent - конент (блок) важливо щоб всі були в одному блоці)
@@ -91,8 +84,8 @@ const front = {
     classicTabs: function (link, content, active) {
         active = typeof active !== 'undefined' ? active : 0;
 
-        const nodeListLink = document.querySelectorAll(".tabs-books__link");
-        const nodeListCont = document.querySelectorAll(".tabs-box");
+        const nodeListLink = document.querySelectorAll(link);
+        const nodeListCont = document.querySelectorAll(content);
 
         [].forEach.call(nodeListLink, function(el){
            el.addEventListener('click',function (e) {
@@ -105,10 +98,11 @@ const front = {
                this.classList.add('active');
                // fadeOut active content
                [].forEach.call(nodeListCont, function(el){
-                   front.fadeOut(el);
+                   el.style.opacity = 0;
+                   el.style.display = 'none';
                });
                //faddeIn new content
-               front.fadeIn(nodeListCont[index]);
+               front.fadeIn(nodeListCont[index],1000);
            })
         });
 
@@ -121,10 +115,23 @@ const front = {
         nodeListCont[active].style.display='block';
 
     },
+    setEqualHeight:function(columns){
+        var tallestcolumn = 0;
+        columns.each(
+            function() {
+                currentHeight = $(this).height();
+                if (currentHeight > tallestcolumn) {
+                    tallestcolumn = currentHeight;
+                }
+            }
+        );
+        columns.height(tallestcolumn);
+    },
     init: function () {
         this.MobileMenuOpenClose();
         this.Slider.init();
-        this.classicTabs( "nodeListLink", "nodeListCont", 0);
+        this.classicTabs( ".tabs-books__item", ".tabs-box", 0);
+        this.setEqualHeight($(".feedback__item > div"));
 
         // виклик
         // this.classicTabs( ".tab-li", ".tab-cont", 2);
@@ -136,18 +143,18 @@ document.addEventListener('DOMContentLoaded', function () {
     front.init();
 });
 
-function setEqualHeight(columns) {
-  var tallestcolumn = 0;
-  columns.each(
-    function() {
-      currentHeight = $(this).height();
-      if (currentHeight > tallestcolumn) {
-        tallestcolumn = currentHeight;
-      }
-    }
-  );
-  columns.height(tallestcolumn);
-}
-$(document).ready(function() {
-  setEqualHeight($(".feedback__item > div"));
-});
+// function setEqualHeight(columns) {
+//  var tallestcolumn = 0;
+// columns.each(
+//     function() {
+//         currentHeight = $(this).height();
+//         if (currentHeight > tallestcolumn) {
+//             tallestcolumn = currentHeight;
+//         }
+//     }
+// );
+// columns.height(tallestcolumn);
+// }
+// $(document).ready(function() {
+//   setEqualHeight($(".feedback__item > div"));
+// });
