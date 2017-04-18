@@ -53,9 +53,15 @@ const front = {
 
         // ініціалізація всіх слайдерів
         init: function () {
-            this.SLICK( $('.js-slider') , this.mainSlider);
-            this.SLICK( $('.sertyficats-slider') , this.secondSlider);
-            this.SLICK( $('.gallery-slider') , this.thirdSlider);
+            if( $('.js-slider').length ){
+              this.SLICK( $('.js-slider') , this.mainSlider);
+            } 
+            if( $('.sertyficats-slider').length ) {
+              this.SLICK( $('.sertyficats-slider') , this.secondSlider);
+            }
+            if( $('.gallery-slider').length ){
+              this.SLICK( $('.gallery-slider') , this.thirdSlider);
+            } 
         }
 
     },
@@ -64,10 +70,10 @@ const front = {
         el.style.display = display || "block";
         time = time || 500;
 
-        let stepTime =  time/100;
+        var stepTime =  time/100;
 
         (function fadeIna(){
-            let opacity = parseFloat(el.style.opacity);
+            var opacity = parseFloat(el.style.opacity);
             if (opacity == 1) return;
             el.style.opacity = opacity + 0.1;
             setTimeout(fadeIna, stepTime);
@@ -116,23 +122,44 @@ const front = {
 
     },
     setEqualHeight:function(columns){
-        var tallestcolumn = 0;
-        columns.each(
-            function() {
-                currentHeight = $(this).height();
-                if (currentHeight > tallestcolumn) {
-                    tallestcolumn = currentHeight;
-                }
-            }
-        );
-        columns.height(tallestcolumn);
+        var tallestcolumn = 0,
+            columns = document.querySelectorAll(columns),
+            currentHeight;
+
+        [].forEach.call(columns, function(el){
+          currentHeight = el.clientHeight;
+          console.log('calc',currentHeight,tallestcolumn);
+          if(currentHeight > tallestcolumn){
+            tallestcolumn = currentHeight;
+          }
+        });
+
+        [].forEach.call(columns, function(el){
+          console.log('set');
+          el.style.height = tallestcolumn + 'px';
+        });
+
+        // columns.each(
+        //     function() {
+        //         currentHeight = $(this).height();
+        //         if (currentHeight > tallestcolumn) {
+        //             tallestcolumn = currentHeight;
+        //         }
+        //     }
+        // );
+        // columns.height(tallestcolumn);
     },
     init: function () {
         this.MobileMenuOpenClose();
         this.Slider.init();
-        this.classicTabs( ".tabs-books__item", ".tabs-box", 0);
-        this.setEqualHeight($(".feedback__item > div"));
 
+        if ($('.tabs-books__item').length && $('.tabs-box').length ) {
+          this.classicTabs( ".tabs-books__item", ".tabs-box", 0);
+        }        
+
+        if ( $(".feedback__item > div").length ) {
+          this.setEqualHeight( ".feedback__item > div" );
+        }
         // виклик
         // this.classicTabs( ".tab-li", ".tab-cont", 2);
     }
