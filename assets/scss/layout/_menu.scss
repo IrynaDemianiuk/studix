@@ -46,6 +46,7 @@
     text-align: left;
     text-transform: uppercase;
     padding: 26px 18px 27px;
+    transition: 0.5s;
     @include respond-to(md) {
       font-size: 14px;
       padding: 26px 13px 27px;

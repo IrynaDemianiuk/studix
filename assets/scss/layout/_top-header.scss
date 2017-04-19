@@ -1,5 +1,5 @@
 .top-header {
-  background: #272727 url(../../img/top-header.jpg) repeat;
+  background: #272727 url("../../img/top-header.jpg") repeat;
   padding-top: 13px;
   padding-bottom: 13px;
 }
@@ -34,21 +34,21 @@
     padding-top: 5px;
     text-align: justify;
     letter-spacing: 0.6px;
-   @include respond-to(md) {
-     font-size: 18px;
-     letter-spacing: normal;
-   }
-   @include respond-to(479) {
-     font-size: 16px;
-     letter-spacing: 1.5px;
-    word-spacing: 2px;
-  }
+    @include respond-to(md) {
+      font-size: 18px;
+      letter-spacing: normal;
+    }
+    @include respond-to(479) {
+      font-size: 16px;
+      letter-spacing: 1.5px;
+      word-spacing: 2px;
+    }
     @include respond-to(360) {
       font-size: 14px;
       letter-spacing: normal;
       word-spacing: normal;
     }
-}
+  }
 }
 
 .language {
@@ -101,10 +101,10 @@
     font-weight: 400;
     line-height: 25px;
     text-align: right;
-    border: 1px solid transparent;
     padding-right: 8px;
     padding-left: 28px;
     border: 1px solid transparent;
+    transition: 0.5s;
     @include respond-to(sm) {
       border: 1px solid #898989;
     }
@@ -310,6 +310,7 @@
     margin-right: 1px;
     display: inline-block;
     vertical-align: top;
+    transition: 0.3s;
 
     &:before {
       content: "";
@@ -396,7 +397,7 @@
       border: none;
       outline: none;
       background: transparent;
-      transition: 0.5s;
+      transition: 0.3s;
 
       &:hover {
         opacity: 1;

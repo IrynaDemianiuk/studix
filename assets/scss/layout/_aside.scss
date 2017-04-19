@@ -131,6 +131,7 @@ main {
     text-align: left;
     border-left: 3px solid transparent;
     padding: 15px 14px;
+    margin-bottom: 3px;
     @include respond-to(sm) {
       text-align: center;
       background: #fff;
@@ -189,6 +190,8 @@ main {
       line-height: 18px;
       text-align: left;
       background-color: #fff;
+      margin-bottom: 10px;
+      transition: 0.3s;
       @include respond-to(sm) {
         display: none;
       }
@@ -229,7 +232,6 @@ main {
   }
 
   &:hover {
-    border-left: 3px solid transparent;
     color: #fff;
   }
 
