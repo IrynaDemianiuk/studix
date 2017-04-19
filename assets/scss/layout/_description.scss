@@ -21,6 +21,9 @@
     line-height: 30px;
     text-align: left;
     padding-bottom: 34px;
+    @include respond-to(479) {
+      font-size: 18px;
+    }
   }
 
   h4,

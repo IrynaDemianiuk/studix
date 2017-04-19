@@ -20,6 +20,20 @@ const front = {
             }
         });
     },
+    UniversityOpenClose: function () {
+        let toggleBtnList = document.querySelector(".toggle-btn-list");
+        let asideList = document.querySelector(".aside__inner");
+
+        toggleBtnList.addEventListener("click", function (event) {
+            event.preventDefault();
+            if (asideList.classList.contains("aside__inner--opened")) {
+                asideList.classList.remove("aside__inner--opened");
+            } else {
+                asideList.classList.add("aside__inner--opened");
+              }
+        });
+    },
+
     Slider: {
 
         //це параметри слайдера, так само як всі привикли писати.
@@ -142,6 +156,7 @@ const front = {
     },
     init: function () {
         this.MobileMenuOpenClose();
+        this.UniversityOpenClose();
         this.Slider.init();
 
         if ($('.tabs-books__item').length && $('.tabs-box').length ) {

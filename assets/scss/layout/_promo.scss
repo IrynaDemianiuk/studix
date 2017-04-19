@@ -77,8 +77,12 @@
       font-size: 32px;
     }
     @include respond-to(479) {
-      font-size: 26px;
-      line-height: 36px;
+      font-size: 22px;
+      line-height: 28px;
+    }
+    @include respond-to(320) {
+      font-size: 18px;
+      line-height: 28px;
     }
   }
 
@@ -105,7 +109,7 @@
     text-align: center;
     background-color: #0072bc;
     text-transform: uppercase;
-    padding: 22px 77px 21px 78px;
+    padding: 22px 22px 21px 22px;
     @include respond-to(sm) {
       position: absolute;
       background: #f7941d;
@@ -115,6 +119,10 @@
     }
     @include respond-to(479) {
       font-size: 16px;
+      padding: 12px 12px 11px 12px;
+    }
+    @include respond-to(360) {
+      font-size: 13px;
     }
   }
 }
@@ -193,7 +201,7 @@
     text-align: center;
     background-color: #0072bc;
     text-transform: uppercase;
-    padding: 22px 23px 21px;
+    padding: 22px 0 21px 0;
     @include respond-to(sm) {
       position: absolute;
       right: -15px;
@@ -202,6 +210,10 @@
     }
     @include respond-to(479) {
       font-size: 16px;
+      padding: 12px 12px 11px 12px;
+    }
+    @include respond-to(360) {
+      font-size: 12px;
     }
   }
 }
