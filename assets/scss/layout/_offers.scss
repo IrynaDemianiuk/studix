@@ -28,7 +28,6 @@
   display: block;
   position: relative;
   margin-bottom: 20px;
-  //
   @include respond-to(sm) {
    width: 100%;
 }

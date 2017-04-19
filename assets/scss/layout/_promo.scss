@@ -48,7 +48,8 @@
 }
 
 .promo-inf {
-  width: 600px;
+  max-width: 600px;
+
 
   &__title {
     @include OpenSans-700;

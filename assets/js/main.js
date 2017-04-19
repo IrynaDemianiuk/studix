@@ -38,12 +38,6 @@ const front = {
           slidesToScroll: 1
        },
 
-       thirdSlider: {
-         infinite: true,
-         slidesToShow: 4,
-         slidesToScroll: 1
-      },
-
 
         //ініціалізація слайдера куда ми передаємо /params/ обєкт з параметрами
         SLICK: function (block,params) {
@@ -55,13 +49,10 @@ const front = {
         init: function () {
             if( $('.js-slider').length ){
               this.SLICK( $('.js-slider') , this.mainSlider);
-            } 
-            if( $('.sertyficats-slider').length ) {
-              this.SLICK( $('.sertyficats-slider') , this.secondSlider);
             }
-            if( $('.gallery-slider').length ){
-              this.SLICK( $('.gallery-slider') , this.thirdSlider);
-            } 
+            if( $('.second-slider').length ) {
+              this.SLICK( $('.second-slider') , this.secondSlider);
+            }
         }
 
     },
@@ -155,7 +146,7 @@ const front = {
 
         if ($('.tabs-books__item').length && $('.tabs-box').length ) {
           this.classicTabs( ".tabs-books__item", ".tabs-box", 0);
-        }        
+        }
 
         if ( $(".feedback__item > div").length ) {
           this.setEqualHeight( ".feedback__item > div" );

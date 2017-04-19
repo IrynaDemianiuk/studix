@@ -16,14 +16,14 @@
   &-poland {
     margin-right: 68px;
     @include respond-to(md) {
-      margin-right: 0;
+      margin-right: 10px;
     }
   }
 
   &-czech {
     margin-right: 85px;
     @include respond-to(md) {
-      margin-right: 0;
+      margin-right: 10px;
     }
   }
 }
@@ -50,6 +50,7 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+    align-content: stretch;
     @include respond-to(sm) {
       flex-flow: column nowrap;
     }
@@ -107,7 +108,9 @@
     margin-right: 65px;
     @include respond-to(md) {
       margin-right: 30px;
-      justify-content: space-around;
+      justify-content: space-between;
+      flex: 2 50%;
+      max-width: 850px;
     }
     @include respond-to(sm) {
       flex-flow: column nowrap;
