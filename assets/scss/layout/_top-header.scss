@@ -22,33 +22,6 @@
       height: auto;
     }
   }
-
-  &__text {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    color: #f7941d;
-    text-transform: uppercase;
-    font-size: 22px;
-    line-height: 12px;
-    text-align: left;
-    padding-top: 5px;
-    text-align: justify;
-    letter-spacing: 0.6px;
-    @include respond-to(md) {
-      font-size: 18px;
-      letter-spacing: normal;
-    }
-    @include respond-to(479) {
-      font-size: 16px;
-      letter-spacing: 1.5px;
-      word-spacing: 2px;
-    }
-    @include respond-to(360) {
-      font-size: 14px;
-      letter-spacing: normal;
-      word-spacing: normal;
-    }
-  }
 }
 
 .language {

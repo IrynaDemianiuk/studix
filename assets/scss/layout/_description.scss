@@ -4,6 +4,9 @@
   justify-content: space-between;
 
   margin-bottom: 57px;
+  @include respond-to(sm) {
+    margin-bottom: 0;
+  }
 }
 
 .description {

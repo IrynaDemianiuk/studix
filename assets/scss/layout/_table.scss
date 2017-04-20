@@ -1,7 +1,9 @@
-.tabs-box {
+.tabs-box-table {
   border: 1px solid #e1e1e1;
   width: 100%;
+}
 
+.tabs-box {
   &__table {
     border-spacing: 0;
   }
@@ -16,6 +18,9 @@
     text-align: left;
     text-transform: uppercase;
     margin-bottom: 23px;
+    @include respond-to(xs) {
+       font-size: 14px;
+    }
   }
 
   &__cell {
@@ -34,6 +39,10 @@
       text-align: center;
       text-transform: uppercase;
       padding: 16px 0;
+      @include respond-to(xs) {
+         font-size: 12px;
+         padding: 10px 0;
+      }
     }
   }
 
@@ -45,6 +54,10 @@
       line-height: 1.3;
       text-align: left;
       padding: 16px 28px;
+      @include respond-to(xs) {
+         font-size: 12px;
+         padding: 10px;
+      }
     }
 
     .tabs-box__cell:first-child {
@@ -52,6 +65,9 @@
       font-weight: 700;
       text-transform: uppercase;
       background-color: #f9f9f9;
+      @include respond-to(xs) {
+         font-weight: 400;
+      }
     }
 
     .tabs-box__cell:last-child {
@@ -66,5 +82,8 @@
     line-height: 25px;
     text-align: left;
     margin-top: 29px;
+    @include respond-to(xs) {
+       font-size: 14px;
+    }
   }
 }

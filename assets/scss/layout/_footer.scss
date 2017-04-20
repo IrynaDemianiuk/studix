@@ -73,6 +73,10 @@
       @include respond-to(sm) {
         margin: 0 auto 34px;
         text-align: center;
+        max-width: 500px;
+      }
+      @include respond-to(479) {
+        max-width: 280px;
       }
       &__link {
         text-decoration: underline;

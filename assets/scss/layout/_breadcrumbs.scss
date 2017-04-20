@@ -1,9 +1,16 @@
 .breadcrumbs {
   border-bottom: 1px solid #e1e1e1;
   margin-bottom: 40px;
+  @include respond-to(sm) {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  }
   &__item {
     display: inline-block;
     margin-bottom: 26px;
+    @include respond-to(xs) {
+      margin-bottom: 5px;
+    }
   }
   &__link {
     font-family: 'Open Sans';

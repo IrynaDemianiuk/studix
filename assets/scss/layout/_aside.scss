@@ -5,12 +5,7 @@
   @include respond-to(sm) {
     flex-flow: column;
     margin-bottom: 20px;
-  }
-}
-
-.container-bg {
-  @include respond-to(sm) {
-    background-color: #f9f9f9;
+    margin-top: 0;
   }
 }
 
@@ -19,8 +14,6 @@
   margin-right: 29px;
   @include respond-to(sm) {
     width: auto;
-  }
-  @include respond-to(sm) {
     flex-flow: column;
     margin-right: 0;
   }
@@ -34,6 +27,11 @@ main {
   &__flex-inner {
     display: flex;
     flex-flow: column nowrap;
+    @include respond-to(sm) {
+      background-color: #f9f9f9;;
+      margin: 0 -15px;
+      padding: 30px 15px 25px;
+    }
   }
 
   &__title-wrapper {
@@ -113,14 +111,6 @@ main {
     }
   }
 
-  &__item {
-    width: 100%;
-    @include respond-to(sm) {
-      background: #fff;
-      display: none;
-    }
-  }
-
   &__link {
     display: block;
     background-color: #f9f9f9;
@@ -135,7 +125,6 @@ main {
     @include respond-to(sm) {
       text-align: center;
       background: #fff;
-      max-width: 260px;
       margin: 0 auto 4px;
     }
   }
@@ -178,7 +167,7 @@ main {
 
   &__list {
     @include respond-to(sm) {
-      display: block;
+      display: none;
       text-align: center;
     }
 
@@ -256,5 +245,12 @@ main {
   flex: 2 0;
   @include respond-to(sm) {
     width: 100%;
+  }
+}
+
+.aside-second {
+  width: 327px;
+  @include respond-to(sm) {
+    display: none;
   }
 }

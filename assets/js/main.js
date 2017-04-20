@@ -34,6 +34,14 @@ const front = {
         });
     },
 
+    toggleOpenClose: function(link) {
+        link.on('click', function(e){
+            e.preventDefault();
+            $(this).parent().next().stop().slideToggle();
+
+        });
+    },
+
     Slider: {
 
         //це параметри слайдера, так само як всі привикли писати.
@@ -158,9 +166,10 @@ const front = {
         this.MobileMenuOpenClose();
         this.UniversityOpenClose();
         this.Slider.init();
+        this.toggleOpenClose($(".aside-block__title"));
 
-        if ($('.tabs-books__item').length && $('.tabs-box').length ) {
-          this.classicTabs( ".tabs-books__item", ".tabs-box", 0);
+        if ($('.tabs-books__link').length && $('.tabs-box').length ) {
+          this.classicTabs( ".tabs-books__link", ".tabs-box", 0);
         }
 
         if ( $(".feedback__item > div").length ) {
