@@ -2,6 +2,10 @@
   background: #272727 url("../../img/top-header.jpg") repeat;
   padding-top: 13px;
   padding-bottom: 13px;
+  @include respond-to(479) {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
 }
 
 .top-header {
@@ -21,6 +25,10 @@
       width: 200px;
       height: auto;
     }
+    @include respond-to(479) {
+      width: 140px;
+      height: auto;
+    }
   }
 }
 
@@ -38,7 +46,9 @@
     width: 130px;
   }
   @include respond-to(479) {
-    width: 57px;
+    width: 130px;
+    margin-left: 8px;
+    margin-right: 8px;
   }
 
   &__item {
@@ -58,7 +68,7 @@
       }
     }
     @include respond-to(479) {
-      margin-bottom: 0;
+      margin: 0 2px 2px 0;
     }
   }
 
@@ -82,7 +92,12 @@
       border: 1px solid #898989;
     }
     @include respond-to(479) {
-      border: 1px solid transparent;
+      font-size: 12px;
+    }
+    @include respond-to(360) {
+      padding-left: 24px;
+      padding-right: 4px;
+      width: 47px;
     }
 
     &:before {
@@ -93,6 +108,9 @@
       width: 14px;
       height: 10px;
       background: url("../../img/lang.png");
+      @include respond-to(479) {
+        left: 4px;
+      }
     }
 
     &:hover {
@@ -371,6 +389,9 @@
       outline: none;
       background: transparent;
       transition: 0.3s;
+      @include respond-to(360) {
+        width: 35px;
+      }
 
       &:hover {
         opacity: 1;

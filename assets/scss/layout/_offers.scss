@@ -1,26 +1,30 @@
 .offers {
   margin-bottom: 45px;
   @include respond-to(sm) {
-   margin: 0 -15px 40px;
-}
+    margin: 0 -15px 40px;
+  }
+
   &__title {
     text-align: left;
     margin-bottom: 26px;
     @include respond-to(sm) {
-     display: none;
-  }
+      display: none;
+    }
   }
 
   &__flex-inner {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: space-between;
+    @include respond-to(md) {
+      flex: 2 50%;
+    }
   }
 
   &__btn {
     @include respond-to(sm) {
-     display: none;
-  }
+      display: none;
+    }
   }
 }
 
@@ -28,9 +32,19 @@
   display: block;
   position: relative;
   margin-bottom: 20px;
+  @include respond-to(md) {
+    width: 49%;
+    margin-right: 1%;
+  }
   @include respond-to(sm) {
-   width: 100%;
-}
+    width: 100%;
+    margin-bottom: 5px;
+    margin-right: 0;
+  }
+
+  &:nth-child(2n) {
+    margin-right: 0;
+  }
 
   &__title {
     position: absolute;
@@ -46,6 +60,10 @@
     text-transform: uppercase;
     padding-top: 10px;
     padding-bottom: 10px;
+
+    @include respond-to(sm) {
+      right: 40%;
+    }
 
     span {
       color: #f58f00;
@@ -70,9 +88,9 @@
   &__picture img {
     width: 298px;
     height: 245px;
-    @include respond-to(sm) {
-    width: 100%;
-    height:auto;
-  }
+    @include respond-to(md) {
+      width: 100%;
+      height: auto;
+    }
   }
 }

@@ -58,6 +58,10 @@
       border-bottom: 0.5px solid #c2c2c2;
       background: #fff;
     }
+    @include respond-to(360) {
+      font-size: 14px;
+      padding: 18px;
+    }
 
     &--active {
       @include roboto-700;

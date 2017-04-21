@@ -41,6 +41,10 @@ main {
       padding-bottom: 21px;
       margin-bottom: 26px;
       background: #fff;
+      @include respond-to(479) {
+        padding-top: 18px;
+        padding-bottom: 16px;
+      }
     }
   }
 
@@ -66,6 +70,9 @@ main {
       width: 250px;
       margin: 0 auto;
       padding-left: 50px;
+    }
+    @include respond-to(360) {
+      font-size: 20px;
     }
 
     .toggle-btn-list {
