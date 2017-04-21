@@ -30,7 +30,7 @@ main {
     @include respond-to(sm) {
       background-color: #f9f9f9;;
       margin: 0 -15px;
-      padding: 30px 15px 25px;
+      padding: 30px 15px 0;
     }
   }
 
@@ -39,7 +39,7 @@ main {
       border: 1px solid #f7941d;
       padding-top: 22px;
       padding-bottom: 21px;
-      margin-bottom: 26px;
+      margin-bottom: 30px;
       background: #fff;
       @include respond-to(479) {
         padding-top: 18px;
@@ -51,6 +51,7 @@ main {
   &__inner {
     @include respond-to(sm) {
     display: none;
+    margin-bottom: 25px;
   }
     &--opened {
     display: block;
@@ -70,9 +71,6 @@ main {
       width: 250px;
       margin: 0 auto;
       padding-left: 50px;
-    }
-    @include respond-to(360) {
-      font-size: 20px;
     }
 
     .toggle-btn-list {
