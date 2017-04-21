@@ -80,7 +80,7 @@
       top: 50%;
       transform: translateY(-50%);
     }
-    @include respond-to(320) {
+    @include respond-to(360) {
       font-size: 18px;
       line-height: 28px;
     }

@@ -1,0 +1,57 @@
+main {
+  width: calc(100% - 327px);
+  flex: 2 0;
+  @include respond-to(sm) {
+    width: 100%;
+  }
+}
+
+.dable-main {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin-bottom: 57px;
+  @include respond-to(sm) {
+    margin-bottom: 0;
+  }
+}
+
+.dable-main-contacts {
+  @include respond-to(md) {
+    flex-flow: column nowrap;
+  }
+}
+
+.third-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  @include respond-to(sm) {
+    display: none;
+  }
+
+  .interesting {
+    flex-grow: 1;
+    margin-right: 30px;
+    @include respond-to(md) {
+      flex-grow: 0;
+    }
+
+    .consultation__quote {
+      text-align: left;
+    }
+
+    &__link {
+      font-family: 'Open Sans';
+      color: #000;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 30px;
+      text-align: left;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

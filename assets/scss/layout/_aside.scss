@@ -19,10 +19,6 @@
   }
 }
 
-main {
-  width: calc(100% - 327px);
-}
-
 .aside {
   &__flex-inner {
     display: flex;
@@ -246,15 +242,15 @@ main {
   }
 }
 
-main {
-  flex: 2 0;
-  @include respond-to(sm) {
-    width: 100%;
-  }
-}
-
 .aside-second {
   width: 327px;
+  @include respond-to(md) {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+  }
   @include respond-to(sm) {
     display: none;
   }

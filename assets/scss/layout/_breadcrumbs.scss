@@ -25,3 +25,12 @@
     }
   }
 }
+
+.breadcrumbs-contacts {
+  @include respond-to(sm) {
+    padding: 8px 30px 0;
+  }
+  @include respond-to(xs) {
+    padding: 8px 0 0;
+  }
+}

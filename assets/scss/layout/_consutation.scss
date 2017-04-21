@@ -1,6 +1,9 @@
 .consultation {
   background-color: #252525;
   margin-bottom: 45px;
+  @include respond-to(md) {
+    width: 350px;
+  }
 
   &__inf {
     @include roboto-c-700;

@@ -165,49 +165,19 @@
   padding: 30px 25px;
   margin-bottom: 48px;
 
+  &__flex-inner {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+    align-content: stretch;
+  }
+
+
   &__picture {
     display: inline-block;
-    margin: 0 0 4px;
-  }
-
-  img {
-    width: 218px;
-    height: 156px;
-    @include respond-to(xs) {
-       width: 190px;
-    }
-    @include respond-to(xs) {
-       width: 140px;
-       height: auto;
-    }
-  }
-}
-
-.third-main {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  @include respond-to(sm) {
-    display: none;
-  }
-
-  .interesting {
-    .consultation__quote {
-      text-align: left;
-    }
-
-    &__link {
-      font-family: 'Open Sans';
-      color: #000;
-      font-size: 14px;
-      font-weight: 600;
-      line-height: 30px;
-      text-align: left;
-
-      &:hover {
-        text-decoration: underline;
-      }
-    }
+    margin: 0 2px 4px;
+    width: 24%;
+    height: auto;
   }
 }
 
