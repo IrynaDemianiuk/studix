@@ -17,5 +17,8 @@
   }
   .title-border-left {
     margin-bottom: 30px;
+    @include respond-to(479) {
+      line-height: 20px;
+    }
   }
 }

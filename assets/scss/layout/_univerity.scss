@@ -152,6 +152,10 @@
        font-size: 12px;
        padding: 10px;
     }
+    @include respond-to(479) {
+       font-size: 12px;
+       padding: 5px;
+    }
 }
 }
 
@@ -164,6 +168,12 @@
   border: 1px solid #ebebeb;
   padding: 30px 25px;
   margin-bottom: 48px;
+  @include respond-to(xs) {
+     padding: 30px 24px;
+  }
+  @include respond-to(479) {
+     padding: 30px 10px;
+  }
 
   &__flex-inner {
     display: flex;
@@ -178,6 +188,14 @@
     margin: 0 2px 4px;
     width: 24%;
     height: auto;
+    @include respond-to(xs) {
+       width: 48%;
+    }
+    img {
+      @include respond-to(xs) {
+         width: 100%;
+      }
+    }
   }
 }
 
