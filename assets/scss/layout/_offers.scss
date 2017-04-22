@@ -61,10 +61,6 @@
     padding-top: 10px;
     padding-bottom: 10px;
 
-    @include respond-to(sm) {
-      right: 40%;
-    }
-
     span {
       color: #f58f00;
     }
