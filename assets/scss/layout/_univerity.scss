@@ -86,51 +86,45 @@
   }
 }
 
-  .university-center {
-    display: flex;
-    flex-flow: row;
+.university-center {
+  display: flex;
+  flex-flow: row;
+  @include respond-to(xs) {
+    flex-flow: column wrap;
+    align-items: center;
+  }
+
+  p:first-child {
+    font-weight: 700;
+  }
+
+  img {
+    width: 189px;
+    height: 253px;
+    margin-left: 35px;
     @include respond-to(xs) {
-      flex-flow: column wrap;
-      align-items: center;
+      margin-bottom: 40px;
     }
+  }
 
-    p:first-child {
-      font-weight: 700;
-    }
-
-      img {
-      width: 189px;
-      height: 253px;
-      margin-left: 35px;
-      @include respond-to(xs) {
-        margin-bottom: 40px;
-      }
-    }
-
-    &__text {
-      font-family: 'Roboto';
-      color: #000;
-      font-size: 16px;
-      line-height: 25px;
-      text-align: left;
-      padding-bottom: 25px;
-      @include respond-to(xs) {
+  &__text {
+    font-family: 'Roboto';
+    color: #000;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: left;
+    padding-bottom: 25px;
+    @include respond-to(xs) {
       font-size: 14px;
-      }
-
-      &-2 {
-        color: #626262;
-        margin-bottom: 41px;
-        padding-left: 13px;
-        padding-bottom: 0;
-        border-left: 3px solid #f7941d;
-      }
     }
-}
 
-.tabs {
-  @include respond-to(479) {
-    display: flex;
+    &-2 {
+      color: #626262;
+      margin-bottom: 41px;
+      padding-left: 13px;
+      padding-bottom: 0;
+      border-left: 3px solid #f7941d;
+    }
   }
 }
 
@@ -138,7 +132,7 @@
   &__list {
     display: flex;
     flex-flow: row nowrap;
-    @include respond-to(479) {
+    @include respond-to(xs) {
       flex-direction: column;
     }
   }
@@ -153,31 +147,28 @@
     text-transform: uppercase;
     background-color: #f9f9f9;
     border-radius: 5px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
     margin-right: 1px;
     padding: 18px 18px 17px 19px;
     @include respond-to(xs) {
-       font-size: 12px;
-       padding: 10px;
+      width: 100%;
+      text-align: center;
+      font-size: 12px;
+      padding: 10px;
+      font-size: 12px;
+      padding: 15px;
+      border-bottom-left-radius: 4px;
+      border-bottom-right-radius: 4px;
     }
-    @include respond-to(479) {
-       font-size: 12px;
-       padding: 15px;
-       -webkit-writing-mode: vertical-rl;
-       transform: rotate(180deg);
-       border-radius: 5px;
-      border-top-left-radius: 0px;
-       border-bottom-left-radius: 0px;
-    }
-}
+  }
 }
 
 .tabs-box {
   padding: 30px 25px;
   margin-bottom: 48px;
   @include respond-to(479) {
-         padding: 0px 10px;
+    padding: 30px 10px;
   }
 }
 
@@ -186,10 +177,10 @@
   padding: 30px 25px;
   margin-bottom: 48px;
   @include respond-to(xs) {
-     padding: 30px 24px;
+    padding: 30px 24px;
   }
   @include respond-to(479) {
-     padding: 30px 10px;
+    padding: 30px 10px;
   }
 
   &__flex-inner {
@@ -199,18 +190,18 @@
     align-content: stretch;
   }
 
-
   &__picture {
     display: inline-block;
     margin: 0 2px 4px;
     width: 24%;
     height: auto;
     @include respond-to(xs) {
-       width: 48%;
+      width: 48%;
     }
+
     img {
       @include respond-to(xs) {
-         width: 100%;
+        width: 100%;
       }
     }
   }
