@@ -21,12 +21,19 @@
     "watchify": "^3.8.0"
   },
   "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "browserify": "^13.3.0",
     "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
     "gulp-cssmin": "^0.1.7",
+    "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.3.2",
     "gulp-sourcemaps": "^1.12.0",
+    "gulp-streamify": "^1.0.2",
     "gulp-uglify": "^2.1.2",
-    "gulp-util": "^3.0.8"
+    "gulp-util": "^3.0.8",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.9.0"
   },
   "main": "gulpfile.js",
   "scripts": {
@@ -34,5 +41,13 @@
   },
   "author": "",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NirsaGg/studix.git"
+  },
+  "bugs": {
+    "url": "https://github.com/NirsaGg/studix/issues"
+  },
+  "homepage": "https://github.com/NirsaGg/studix#readme",
   "description": ""
 }
